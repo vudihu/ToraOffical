@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB36BFE32B9C4A7400E63D38 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36BFE22B9C4A7400E63D38 /* UIColor+Hex.swift */; };
+		CB36BFEA2B9C567500E63D38 /* SF-Pro-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE72B9C567400E63D38 /* SF-Pro-Rounded-Regular.ttf */; };
+		CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */; };
+		CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */; };
+		CB36BFEE2B9C9AFC00E63D38 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */; };
 		CB4B2DD52B94C613008BA1B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2DD42B94C613008BA1B2 /* AppDelegate.swift */; };
 		CB4B2DD72B94C613008BA1B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2DD62B94C613008BA1B2 /* SceneDelegate.swift */; };
-		CB4B2DD92B94C613008BA1B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2DD82B94C613008BA1B2 /* ViewController.swift */; };
+		CB4B2DD92B94C613008BA1B2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2DD82B94C613008BA1B2 /* LoginScreen.swift */; };
 		CB4B2DDC2B94C613008BA1B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDA2B94C613008BA1B2 /* Main.storyboard */; };
 		CB4B2DDE2B94C614008BA1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */; };
 		CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDF2B94C614008BA1B2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB36BFE22B9C4A7400E63D38 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		CB36BFE72B9C567400E63D38 /* SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
+		CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
+		CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.ttf"; sourceTree = "<group>"; };
+		CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		CB4B2DD12B94C613008BA1B2 /* ToraOffical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToraOffical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4B2DD42B94C613008BA1B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB4B2DD62B94C613008BA1B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB4B2DD82B94C613008BA1B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB4B2DD82B94C613008BA1B2 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		CB4B2DDB2B94C613008BA1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4B2DE02B94C614008BA1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB36BFE12B9C49F800E63D38 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB36BFE22B9C4A7400E63D38 /* UIColor+Hex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		CB4B2DC82B94C613008BA1B2 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +76,26 @@
 			children = (
 				CB4B2DD42B94C613008BA1B2 /* AppDelegate.swift */,
 				CB4B2DD62B94C613008BA1B2 /* SceneDelegate.swift */,
-				CB4B2DD82B94C613008BA1B2 /* ViewController.swift */,
+				CB4B2DD82B94C613008BA1B2 /* LoginScreen.swift */,
+				CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */,
 				CB4B2DDA2B94C613008BA1B2 /* Main.storyboard */,
+				CB36BFE12B9C49F800E63D38 /* Extension */,
 				CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */,
 				CB4B2DDF2B94C614008BA1B2 /* LaunchScreen.storyboard */,
 				CB4B2DE22B94C614008BA1B2 /* Info.plist */,
+				CBCE2C032B9C1E6100D4E274 /* Font */,
 			);
 			path = ToraOffical;
+			sourceTree = "<group>";
+		};
+		CBCE2C032B9C1E6100D4E274 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */,
+				CB36BFE72B9C567400E63D38 /* SF-Pro-Rounded-Regular.ttf */,
+				CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +156,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */,
 				CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */,
 				CB4B2DDE2B94C614008BA1B2 /* Assets.xcassets in Resources */,
+				CB36BFEA2B9C567500E63D38 /* SF-Pro-Rounded-Regular.ttf in Resources */,
 				CB4B2DDC2B94C613008BA1B2 /* Main.storyboard in Resources */,
+				CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4B2DD92B94C613008BA1B2 /* ViewController.swift in Sources */,
+				CB36BFEE2B9C9AFC00E63D38 /* OnboardingScreen.swift in Sources */,
+				CB4B2DD92B94C613008BA1B2 /* LoginScreen.swift in Sources */,
+				CB36BFE32B9C4A7400E63D38 /* UIColor+Hex.swift in Sources */,
 				CB4B2DD52B94C613008BA1B2 /* AppDelegate.swift in Sources */,
 				CB4B2DD72B94C613008BA1B2 /* SceneDelegate.swift in Sources */,
 			);
@@ -290,6 +326,8 @@
 				DEVELOPMENT_TEAM = Z2MKY57W8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToraOffical/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +356,8 @@
 				DEVELOPMENT_TEAM = Z2MKY57W8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToraOffical/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
