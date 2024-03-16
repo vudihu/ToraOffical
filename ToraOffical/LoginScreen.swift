@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftHEXColors
 
 class LoginScreen: UIViewController {
 
@@ -37,10 +38,10 @@ class LoginScreen: UIViewController {
         }
         emailTextField.layer.cornerRadius = 4
         emailTextField.layer.borderWidth = 1
-        emailTextField.layer.borderColor = UIColor(hex: 0xB8B8B8).cgColor
+        emailTextField.layer.borderColor = UIColor(hexString: "#B8B8B8")?.cgColor
         pwTextField.layer.cornerRadius = 4
         pwTextField.layer.borderWidth = 1
-        pwTextField.layer.borderColor = UIColor(hex: 0xB8B8B8).cgColor
+        pwTextField.layer.borderColor = UIColor(hexString: "#B8B8B8")?.cgColor
         loginButton.layer.cornerRadius = 24
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
@@ -51,12 +52,16 @@ class LoginScreen: UIViewController {
     }
 
     @IBAction private func backToOnboarding(_ sender: Any) {
+        let onboarding = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OnboardingScreen") as! OnboardingScreen
+        navigationController?.pushViewController(onboarding, animated: false)
     }
     
     @IBAction private func topToUpdatePW(_ sender: Any) {
     }
     
     @IBAction private func tapToLogin(_ sender: Any) {
+        let home = HomeScreen()
+        navigationController?.pushViewController(home, animated: false)
     }
     
     @IBAction private func tapToLoginWithFB(_ sender: Any) {

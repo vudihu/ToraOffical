@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB36BFE32B9C4A7400E63D38 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36BFE22B9C4A7400E63D38 /* UIColor+Hex.swift */; };
+		5ABBCD4BBC6C7CA78E8FF66B /* Pods_ToraOffical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5AD855A8112EF96C73F601 /* Pods_ToraOffical.framework */; };
+		CB2584082BA58A3800FF6DEC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB2584072BA58A3800FF6DEC /* Localizable.strings */; };
+		CB2584122BA58F7700FF6DEC /* LearnScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584102BA58F7700FF6DEC /* LearnScreen.swift */; };
+		CB2584132BA58F7700FF6DEC /* LearnScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584112BA58F7700FF6DEC /* LearnScreen.xib */; };
+		CB2584172BA58FAA00FF6DEC /* BookScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584152BA58FAA00FF6DEC /* BookScreen.swift */; };
+		CB2584182BA58FAA00FF6DEC /* BookScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584162BA58FAA00FF6DEC /* BookScreen.xib */; };
+		CB2584232BA5903F00FF6DEC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584212BA5903F00FF6DEC /* HomeScreen.swift */; };
+		CB2584242BA5903F00FF6DEC /* HomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584222BA5903F00FF6DEC /* HomeScreen.xib */; };
+		CB2584282BA5921500FF6DEC /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584262BA5921500FF6DEC /* ProfileScreen.swift */; };
+		CB2584292BA5921500FF6DEC /* ProfileScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584272BA5921500FF6DEC /* ProfileScreen.xib */; };
 		CB36BFEA2B9C567500E63D38 /* SF-Pro-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE72B9C567400E63D38 /* SF-Pro-Rounded-Regular.ttf */; };
 		CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */; };
 		CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */; };
@@ -18,10 +27,20 @@
 		CB4B2DDC2B94C613008BA1B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDA2B94C613008BA1B2 /* Main.storyboard */; };
 		CB4B2DDE2B94C614008BA1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */; };
 		CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDF2B94C614008BA1B2 /* LaunchScreen.storyboard */; };
+		CBA53E442BA5ECCA001FA7D8 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB36BFE22B9C4A7400E63D38 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		4A5AD855A8112EF96C73F601 /* Pods_ToraOffical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToraOffical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2584072BA58A3800FF6DEC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CB2584102BA58F7700FF6DEC /* LearnScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnScreen.swift; sourceTree = "<group>"; };
+		CB2584112BA58F7700FF6DEC /* LearnScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearnScreen.xib; sourceTree = "<group>"; };
+		CB2584152BA58FAA00FF6DEC /* BookScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookScreen.swift; sourceTree = "<group>"; };
+		CB2584162BA58FAA00FF6DEC /* BookScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookScreen.xib; sourceTree = "<group>"; };
+		CB2584212BA5903F00FF6DEC /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		CB2584222BA5903F00FF6DEC /* HomeScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreen.xib; sourceTree = "<group>"; };
+		CB2584262BA5921500FF6DEC /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		CB2584272BA5921500FF6DEC /* ProfileScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileScreen.xib; sourceTree = "<group>"; };
 		CB36BFE72B9C567400E63D38 /* SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
 		CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
 		CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.ttf"; sourceTree = "<group>"; };
@@ -34,6 +53,9 @@
 		CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4B2DE02B94C614008BA1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4B2DE22B94C614008BA1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		F4AB2409855F840BF015EB48 /* Pods-ToraOffical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToraOffical.debug.xcconfig"; path = "Target Support Files/Pods-ToraOffical/Pods-ToraOffical.debug.xcconfig"; sourceTree = "<group>"; };
+		FF4623BCD847D172B4296676 /* Pods-ToraOffical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToraOffical.release.xcconfig"; path = "Target Support Files/Pods-ToraOffical/Pods-ToraOffical.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,16 +63,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ABBCD4BBC6C7CA78E8FF66B /* Pods_ToraOffical.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01E07804A9B878D370A73EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A5AD855A8112EF96C73F601 /* Pods_ToraOffical.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52E2838BB14ABEE1934D3AD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4AB2409855F840BF015EB48 /* Pods-ToraOffical.debug.xcconfig */,
+				FF4623BCD847D172B4296676 /* Pods-ToraOffical.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB2584092BA58EB900FF6DEC /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				CB2584252BA591F800FF6DEC /* Profile */,
+				CB2584142BA58F7E00FF6DEC /* Book */,
+				CB25840F2BA58F5400FF6DEC /* Learn */,
+				CB2584202BA5902200FF6DEC /* Home */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		CB25840F2BA58F5400FF6DEC /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				CB2584102BA58F7700FF6DEC /* LearnScreen.swift */,
+				CB2584112BA58F7700FF6DEC /* LearnScreen.xib */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		CB2584142BA58F7E00FF6DEC /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				CB2584152BA58FAA00FF6DEC /* BookScreen.swift */,
+				CB2584162BA58FAA00FF6DEC /* BookScreen.xib */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		CB2584202BA5902200FF6DEC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CB2584212BA5903F00FF6DEC /* HomeScreen.swift */,
+				CB2584222BA5903F00FF6DEC /* HomeScreen.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CB2584252BA591F800FF6DEC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CB2584262BA5921500FF6DEC /* ProfileScreen.swift */,
+				CB2584272BA5921500FF6DEC /* ProfileScreen.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		CB36BFE12B9C49F800E63D38 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CB36BFE22B9C4A7400E63D38 /* UIColor+Hex.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -60,6 +146,8 @@
 			children = (
 				CB4B2DD32B94C613008BA1B2 /* ToraOffical */,
 				CB4B2DD22B94C613008BA1B2 /* Products */,
+				52E2838BB14ABEE1934D3AD2 /* Pods */,
+				01E07804A9B878D370A73EB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,16 +162,19 @@
 		CB4B2DD32B94C613008BA1B2 /* ToraOffical */ = {
 			isa = PBXGroup;
 			children = (
+				CB4B2DDA2B94C613008BA1B2 /* Main.storyboard */,
 				CB4B2DD42B94C613008BA1B2 /* AppDelegate.swift */,
 				CB4B2DD62B94C613008BA1B2 /* SceneDelegate.swift */,
 				CB4B2DD82B94C613008BA1B2 /* LoginScreen.swift */,
 				CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */,
-				CB4B2DDA2B94C613008BA1B2 /* Main.storyboard */,
+				CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */,
+				CB2584092BA58EB900FF6DEC /* TabbarController */,
 				CB36BFE12B9C49F800E63D38 /* Extension */,
+				CBCE2C032B9C1E6100D4E274 /* Font */,
 				CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */,
 				CB4B2DDF2B94C614008BA1B2 /* LaunchScreen.storyboard */,
 				CB4B2DE22B94C614008BA1B2 /* Info.plist */,
-				CBCE2C032B9C1E6100D4E274 /* Font */,
+				CB2584072BA58A3800FF6DEC /* Localizable.strings */,
 			);
 			path = ToraOffical;
 			sourceTree = "<group>";
@@ -105,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB4B2DE52B94C614008BA1B2 /* Build configuration list for PBXNativeTarget "ToraOffical" */;
 			buildPhases = (
+				459F056CAE3FDCD3FE198359 /* [CP] Check Pods Manifest.lock */,
 				CB4B2DCD2B94C613008BA1B2 /* Sources */,
 				CB4B2DCE2B94C613008BA1B2 /* Frameworks */,
 				CB4B2DCF2B94C613008BA1B2 /* Resources */,
+				3AAFE209BFD8E51E0881267A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,13 +252,60 @@
 				CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */,
 				CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */,
 				CB4B2DDE2B94C614008BA1B2 /* Assets.xcassets in Resources */,
+				CB2584082BA58A3800FF6DEC /* Localizable.strings in Resources */,
 				CB36BFEA2B9C567500E63D38 /* SF-Pro-Rounded-Regular.ttf in Resources */,
+				CB2584132BA58F7700FF6DEC /* LearnScreen.xib in Resources */,
 				CB4B2DDC2B94C613008BA1B2 /* Main.storyboard in Resources */,
+				CB2584182BA58FAA00FF6DEC /* BookScreen.xib in Resources */,
+				CB2584242BA5903F00FF6DEC /* HomeScreen.xib in Resources */,
 				CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */,
+				CB2584292BA5921500FF6DEC /* ProfileScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AAFE209BFD8E51E0881267A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToraOffical/Pods-ToraOffical-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToraOffical/Pods-ToraOffical-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToraOffical/Pods-ToraOffical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		459F056CAE3FDCD3FE198359 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToraOffical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB4B2DCD2B94C613008BA1B2 /* Sources */ = {
@@ -174,9 +314,13 @@
 			files = (
 				CB36BFEE2B9C9AFC00E63D38 /* OnboardingScreen.swift in Sources */,
 				CB4B2DD92B94C613008BA1B2 /* LoginScreen.swift in Sources */,
-				CB36BFE32B9C4A7400E63D38 /* UIColor+Hex.swift in Sources */,
+				CB2584122BA58F7700FF6DEC /* LearnScreen.swift in Sources */,
+				CB2584282BA5921500FF6DEC /* ProfileScreen.swift in Sources */,
+				CB2584232BA5903F00FF6DEC /* HomeScreen.swift in Sources */,
 				CB4B2DD52B94C613008BA1B2 /* AppDelegate.swift in Sources */,
+				CB2584172BA58FAA00FF6DEC /* BookScreen.swift in Sources */,
 				CB4B2DD72B94C613008BA1B2 /* SceneDelegate.swift in Sources */,
+				CBA53E442BA5ECCA001FA7D8 /* MainTabbarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +462,7 @@
 		};
 		CB4B2DE62B94C614008BA1B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4AB2409855F840BF015EB48 /* Pods-ToraOffical.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,6 +493,7 @@
 		};
 		CB4B2DE72B94C614008BA1B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF4623BCD847D172B4296676 /* Pods-ToraOffical.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
