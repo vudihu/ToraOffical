@@ -27,6 +27,8 @@
 		CB4B2DDC2B94C613008BA1B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDA2B94C613008BA1B2 /* Main.storyboard */; };
 		CB4B2DDE2B94C614008BA1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */; };
 		CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDF2B94C614008BA1B2 /* LaunchScreen.storyboard */; };
+		CB73EFCC2BBC47940007A0EE /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFCB2BBC47940007A0EE /* ExampleBasicContentView.swift */; };
+		CB955CB12BBB6C1F00587035 /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB955CB02BBB6C1F00587035 /* ExampleBouncesContentView.swift */; };
 		CBA53E442BA5ECCA001FA7D8 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4B2DE02B94C614008BA1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4B2DE22B94C614008BA1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB73EFCB2BBC47940007A0EE /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
+		CB955CB02BBB6C1F00587035 /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBouncesContentView.swift; sourceTree = "<group>"; };
 		CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		F4AB2409855F840BF015EB48 /* Pods-ToraOffical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToraOffical.debug.xcconfig"; path = "Target Support Files/Pods-ToraOffical/Pods-ToraOffical.debug.xcconfig"; sourceTree = "<group>"; };
 		FF4623BCD847D172B4296676 /* Pods-ToraOffical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToraOffical.release.xcconfig"; path = "Target Support Files/Pods-ToraOffical/Pods-ToraOffical.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,10 +94,9 @@
 		CB2584092BA58EB900FF6DEC /* TabbarController */ = {
 			isa = PBXGroup;
 			children = (
-				CB2584252BA591F800FF6DEC /* Profile */,
-				CB2584142BA58F7E00FF6DEC /* Book */,
-				CB25840F2BA58F5400FF6DEC /* Learn */,
-				CB2584202BA5902200FF6DEC /* Home */,
+				CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */,
+				CB955CB02BBB6C1F00587035 /* ExampleBouncesContentView.swift */,
+				CB73EFCB2BBC47940007A0EE /* ExampleBasicContentView.swift */,
 			);
 			path = TabbarController;
 			sourceTree = "<group>";
@@ -167,8 +170,11 @@
 				CB4B2DD62B94C613008BA1B2 /* SceneDelegate.swift */,
 				CB4B2DD82B94C613008BA1B2 /* LoginScreen.swift */,
 				CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */,
-				CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */,
 				CB2584092BA58EB900FF6DEC /* TabbarController */,
+				CB2584202BA5902200FF6DEC /* Home */,
+				CB25840F2BA58F5400FF6DEC /* Learn */,
+				CB2584142BA58F7E00FF6DEC /* Book */,
+				CB2584252BA591F800FF6DEC /* Profile */,
 				CB36BFE12B9C49F800E63D38 /* Extension */,
 				CBCE2C032B9C1E6100D4E274 /* Font */,
 				CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */,
@@ -321,6 +327,8 @@
 				CB2584172BA58FAA00FF6DEC /* BookScreen.swift in Sources */,
 				CB4B2DD72B94C613008BA1B2 /* SceneDelegate.swift in Sources */,
 				CBA53E442BA5ECCA001FA7D8 /* MainTabbarViewController.swift in Sources */,
+				CB73EFCC2BBC47940007A0EE /* ExampleBasicContentView.swift in Sources */,
+				CB955CB12BBB6C1F00587035 /* ExampleBouncesContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

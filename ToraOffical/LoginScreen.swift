@@ -60,7 +60,7 @@ class LoginScreen: UIViewController {
     }
     
     @IBAction private func tapToLogin(_ sender: Any) {
-        let home = HomeScreen()
+        let home = MainTabbarViewController()
         navigationController?.pushViewController(home, animated: false)
     }
     
