@@ -7,9 +7,22 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Bold.ttf">
+            <string>SFRounded-Bold</string>
+        </array>
+        <array key="SF-Pro-Rounded-Regular.ttf">
+            <string>SFRounded-Regular</string>
+        </array>
+        <array key="SF-Pro-Rounded-Semibold.ttf">
+            <string>SFRounded-Semibold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookScreen" customModule="ToraOffical" customModuleProvider="target">
             <connections>
+                <outlet property="buyButton" destination="PA9-eH-KIo" id="KVt-ae-CID"/>
+                <outlet property="descriptionLabel" destination="T8P-zO-aRU" id="P0j-8T-Gkp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +30,119 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGZ-Q2-pIx">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sách" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJF-xx-fVa">
+                            <rect key="frame" x="25" y="15.999999999999996" width="343" height="33.666666666666657"/>
+                            <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="XgG-9E-ULs">
+                            <rect key="frame" x="84.666666666666686" y="65.666666666666686" width="224" height="142"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc2" translatesAutoresizingMaskIntoConstraints="NO" id="3Cs-8t-q5D">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="142"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc" translatesAutoresizingMaskIntoConstraints="NO" id="9Pd-az-NOs">
+                                    <rect key="frame" x="124" y="0.0" width="100" height="142"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="9Pd-az-NOs" firstAttribute="width" secondItem="3Cs-8t-q5D" secondAttribute="width" id="IEO-is-OVJ"/>
+                                <constraint firstAttribute="height" constant="142" id="ajp-Ka-TIM"/>
+                                <constraint firstAttribute="width" constant="224" id="s3D-5k-3jN"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luyện đề N5 - N4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLp-9K-Gzu">
+                            <rect key="frame" x="25" y="223.66666666666669" width="343" height="21.666666666666657"/>
+                            <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8P-zO-aRU">
+                            <rect key="frame" x="25" y="253.33333333333331" width="343" height="167.33333333333331"/>
+                            <mutableString key="text">Sách bao gồm: 50 bài học, mỗi bài sẽ cung cấp cho bạn từ vựng, ngữ pháp và các mẫu câu liên quan để bạn có thể hiểu rõ và sử dụng linh hoạt.
+📚 Ưu điểm:
+ Có 50 bài đầy đủ theo giáo trình video
+Câu hỏi và kèm câu trả lời
+Có furigana (phiên âm chữ kanji trên đầu dành cho các bạn chưa biết kanji)
+Có file nghe song ngữ Việt - Nhật giọng chuẩn người bản xứ</mutableString>
+                            <fontDescription key="fontDescription" name="SFRounded-Regular" family="SF Pro Rounded" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="price_tag" translatesAutoresizingMaskIntoConstraints="NO" id="9iD-0G-Cgn">
+                            <rect key="frame" x="25" y="428.66666666666669" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="9B5-Qt-2cp"/>
+                                <constraint firstAttribute="height" constant="24" id="mjA-hL-9CP"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 189.000 VND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5F-Be-hJI">
+                            <rect key="frame" x="49" y="428.66666666666669" width="129.66666666666666" height="24"/>
+                            <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
+                            <color key="textColor" red="0.85098039215686272" green="0.12549019607843137" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-eH-KIo">
+                            <rect key="frame" x="25" y="484.66666666666663" width="343" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="wg1-Zb-8LE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Mua ngay">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="tapToBuy:" destination="-1" eventType="touchUpInside" id="4AH-fz-FLn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="CLp-9K-Gzu" firstAttribute="top" secondItem="XgG-9E-ULs" secondAttribute="bottom" constant="16" id="0LP-7d-Pur"/>
+                        <constraint firstItem="T8P-zO-aRU" firstAttribute="top" secondItem="CLp-9K-Gzu" secondAttribute="bottom" constant="8" id="0h4-XN-pVs"/>
+                        <constraint firstItem="eJF-xx-fVa" firstAttribute="centerX" secondItem="WGZ-Q2-pIx" secondAttribute="centerX" id="2ax-xf-eCX"/>
+                        <constraint firstItem="9iD-0G-Cgn" firstAttribute="leading" secondItem="T8P-zO-aRU" secondAttribute="leading" id="2dl-CH-5QK"/>
+                        <constraint firstItem="PA9-eH-KIo" firstAttribute="centerX" secondItem="WGZ-Q2-pIx" secondAttribute="centerX" id="5hw-ci-5eY"/>
+                        <constraint firstItem="CLp-9K-Gzu" firstAttribute="width" secondItem="WGZ-Q2-pIx" secondAttribute="width" multiplier="327/375" id="9Km-4O-MpN"/>
+                        <constraint firstItem="CLp-9K-Gzu" firstAttribute="centerX" secondItem="WGZ-Q2-pIx" secondAttribute="centerX" id="Adq-zM-pf1"/>
+                        <constraint firstItem="XgG-9E-ULs" firstAttribute="centerX" secondItem="WGZ-Q2-pIx" secondAttribute="centerX" id="Bb1-Xi-Okg"/>
+                        <constraint firstItem="PA9-eH-KIo" firstAttribute="width" secondItem="WGZ-Q2-pIx" secondAttribute="width" multiplier="327/375" id="Fuc-fQ-1rs"/>
+                        <constraint firstItem="PA9-eH-KIo" firstAttribute="top" secondItem="H5F-Be-hJI" secondAttribute="bottom" constant="32" id="Gm3-hL-EYT"/>
+                        <constraint firstItem="eJF-xx-fVa" firstAttribute="width" secondItem="WGZ-Q2-pIx" secondAttribute="width" multiplier="327/375" id="b6z-Kl-LyE"/>
+                        <constraint firstItem="T8P-zO-aRU" firstAttribute="width" secondItem="WGZ-Q2-pIx" secondAttribute="width" multiplier="327/375" id="beB-Uy-ZMg"/>
+                        <constraint firstItem="H5F-Be-hJI" firstAttribute="leading" secondItem="9iD-0G-Cgn" secondAttribute="trailing" id="h2Z-4d-aXw"/>
+                        <constraint firstItem="T8P-zO-aRU" firstAttribute="centerX" secondItem="WGZ-Q2-pIx" secondAttribute="centerX" id="iOP-Sr-ZyM"/>
+                        <constraint firstItem="XgG-9E-ULs" firstAttribute="top" secondItem="eJF-xx-fVa" secondAttribute="bottom" constant="16" id="ihy-Kt-wyD"/>
+                        <constraint firstItem="9iD-0G-Cgn" firstAttribute="top" secondItem="T8P-zO-aRU" secondAttribute="bottom" constant="8" id="mmn-ko-uYL"/>
+                        <constraint firstItem="H5F-Be-hJI" firstAttribute="centerY" secondItem="9iD-0G-Cgn" secondAttribute="centerY" id="tBv-Ac-CNg"/>
+                        <constraint firstItem="eJF-xx-fVa" firstAttribute="top" secondItem="WGZ-Q2-pIx" secondAttribute="top" constant="16" id="wVJ-IN-joT"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WGZ-Q2-pIx" secondAttribute="trailing" id="7GQ-73-1Vl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WGZ-Q2-pIx" secondAttribute="bottom" id="Oyf-c0-BdQ"/>
+                <constraint firstItem="WGZ-Q2-pIx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="szP-08-CTJ"/>
+                <constraint firstItem="WGZ-Q2-pIx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yR7-wF-KFE"/>
+            </constraints>
             <point key="canvasLocation" x="120" y="20"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="doc" width="482" height="682.66668701171875"/>
+        <image name="doc2" width="482.66665649414062" height="682.66668701171875"/>
+        <image name="price_tag" width="24" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
