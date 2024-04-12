@@ -8,22 +8,28 @@
 import UIKit
 
 class LearnScreen: UIViewController {
-
+    @IBOutlet private weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
+    }
+    
+    private func setupUI() {
+        let cardData = [("gate-icon", "#9F7FD1", "N5", "Khóa học N5", "678"),
+                        ("noodle-icon", "#83C579", "N4", "Khóa học N4", "123"),
+                        ("flag-icon", "#5389B9", "N3", "Khóa học N3", "123")]
+        
+        var yOffset: CGFloat = 16
+        for data in cardData {
+            let cardView = CardView(frame: CGRect(x: (scrollView.frame.width - scrollView.frame.width * 327/375)/2, y: yOffset, width: scrollView.frame.width * 327/375, height: 240))
+            cardView.setupDisplay(bgColor: UIColor(hexString: data.1), image: UIImage(named: data.0), courseNumber: data.2, courseName: data.3, number: data.4)
+            scrollView.addSubview(cardView)
+            yOffset += cardView.frame.height + 32
+        }
+        
+        scrollView.contentSize = CGSize(width: scrollView.frame.width, height: yOffset + 16)
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

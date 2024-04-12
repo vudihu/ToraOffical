@@ -7,9 +7,15 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Semibold.ttf">
+            <string>SFRounded-Semibold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LearnScreen" customModule="ToraOffical" customModuleProvider="target">
             <connections>
+                <outlet property="scrollView" destination="Hkx-ww-ziz" id="YTA-L1-i17"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +23,50 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmE-xR-w2m">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Góc học tập" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucR-KU-5A5">
+                            <rect key="frame" x="25" y="16" width="343" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="AR0-2i-HSs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFRounded-Semibold" family="SF Pro Rounded" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkx-ww-ziz">
+                            <rect key="frame" x="0.0" y="54" width="393" height="705"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ucR-KU-5A5" firstAttribute="top" secondItem="wmE-xR-w2m" secondAttribute="top" constant="16" id="0aA-iY-3la"/>
+                        <constraint firstItem="Hkx-ww-ziz" firstAttribute="top" secondItem="ucR-KU-5A5" secondAttribute="bottom" id="CBe-2z-OOW"/>
+                        <constraint firstItem="ucR-KU-5A5" firstAttribute="width" secondItem="wmE-xR-w2m" secondAttribute="width" multiplier="327/375" id="HGH-fY-Ix5"/>
+                        <constraint firstItem="Hkx-ww-ziz" firstAttribute="leading" secondItem="wmE-xR-w2m" secondAttribute="leading" id="Ydl-wf-C7Z"/>
+                        <constraint firstItem="ucR-KU-5A5" firstAttribute="centerX" secondItem="wmE-xR-w2m" secondAttribute="centerX" id="hWB-R4-Chi"/>
+                        <constraint firstAttribute="bottom" secondItem="Hkx-ww-ziz" secondAttribute="bottom" id="uA8-X4-9M7"/>
+                        <constraint firstAttribute="trailing" secondItem="Hkx-ww-ziz" secondAttribute="trailing" id="yDA-FU-MsW"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemRedColor"/>
-            <point key="canvasLocation" x="120" y="20"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wmE-xR-w2m" secondAttribute="trailing" id="CbI-GG-5UB"/>
+                <constraint firstItem="wmE-xR-w2m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Gie-eu-XD8"/>
+                <constraint firstItem="wmE-xR-w2m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KcT-SP-rKt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wmE-xR-w2m" secondAttribute="bottom" id="eNs-fS-H2l"/>
+            </constraints>
+            <point key="canvasLocation" x="119.84732824427481" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

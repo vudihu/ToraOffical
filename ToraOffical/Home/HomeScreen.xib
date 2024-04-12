@@ -7,9 +7,15 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Bold.ttf">
+            <string>SFRounded-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreen" customModule="ToraOffical" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="02Y-77-hJe" id="O5I-ry-y3k"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +23,54 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0R-fp-Ic8">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tora xin chào," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIa-C2-aJQ">
+                            <rect key="frame" x="25" y="16" width="343" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="8CR-P5-bmu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="02Y-77-hJe">
+                            <rect key="frame" x="0.0" y="58" width="393" height="701"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="mzd-ML-wB7"/>
+                                <outlet property="delegate" destination="-1" id="BZC-5F-Wfo"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="02Y-77-hJe" firstAttribute="leading" secondItem="o0R-fp-Ic8" secondAttribute="leading" id="9dI-5c-xM1"/>
+                        <constraint firstAttribute="trailing" secondItem="02Y-77-hJe" secondAttribute="trailing" id="a3M-pc-J2p"/>
+                        <constraint firstItem="zIa-C2-aJQ" firstAttribute="width" secondItem="o0R-fp-Ic8" secondAttribute="width" multiplier="327/375" id="kdw-Uv-Tc0"/>
+                        <constraint firstItem="zIa-C2-aJQ" firstAttribute="centerX" secondItem="o0R-fp-Ic8" secondAttribute="centerX" id="nbc-kG-Din"/>
+                        <constraint firstAttribute="bottom" secondItem="02Y-77-hJe" secondAttribute="bottom" id="qhl-jH-cN1"/>
+                        <constraint firstItem="02Y-77-hJe" firstAttribute="top" secondItem="zIa-C2-aJQ" secondAttribute="bottom" id="yV2-xf-bWg"/>
+                        <constraint firstItem="zIa-C2-aJQ" firstAttribute="top" secondItem="o0R-fp-Ic8" secondAttribute="top" constant="16" id="zat-AR-h7z"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemIndigoColor"/>
-            <point key="canvasLocation" x="120" y="20"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="o0R-fp-Ic8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CSG-Zq-ddV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o0R-fp-Ic8" secondAttribute="trailing" id="Ky2-1W-KwF"/>
+                <constraint firstItem="o0R-fp-Ic8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eIa-ql-hwz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="o0R-fp-Ic8" secondAttribute="bottom" id="n53-Zu-xSe"/>
+            </constraints>
+            <point key="canvasLocation" x="119.84732824427481" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

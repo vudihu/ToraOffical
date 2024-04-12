@@ -11,6 +11,8 @@ class BookScreen: UIViewController {
 
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var buyButton: UIButton!
+    @IBOutlet weak var bookImage1: UIImageView!
+    @IBOutlet weak var bookImage2: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
