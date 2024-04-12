@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TUS-dZ-5PU">
-                                <rect key="frame" x="24" y="36" width="327" height="124"/>
+                                <rect key="frame" x="16" y="36" width="359" height="124"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="124" id="Hj2-yg-Tfm"/>
@@ -48,10 +48,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bxc-PN-v8d" firstAttribute="width" secondItem="bmy-am-qSZ" secondAttribute="width" multiplier="327/375" id="0CP-4U-c4g"/>
-                            <constraint firstItem="TUS-dZ-5PU" firstAttribute="centerX" secondItem="bmy-am-qSZ" secondAttribute="centerX" id="0KU-Yd-jGI"/>
                             <constraint firstItem="bxc-PN-v8d" firstAttribute="centerX" secondItem="bmy-am-qSZ" secondAttribute="centerX" id="8A9-3Y-lDG"/>
                             <constraint firstItem="TUS-dZ-5PU" firstAttribute="top" secondItem="bxc-PN-v8d" secondAttribute="bottom" constant="16" id="QR3-o7-6mP"/>
-                            <constraint firstItem="TUS-dZ-5PU" firstAttribute="width" secondItem="bmy-am-qSZ" secondAttribute="width" multiplier="327/375" id="e3l-qC-Z4u"/>
+                            <constraint firstAttribute="trailing" secondItem="TUS-dZ-5PU" secondAttribute="trailing" id="ZeY-7S-60n"/>
+                            <constraint firstItem="TUS-dZ-5PU" firstAttribute="width" secondItem="bmy-am-qSZ" secondAttribute="width" multiplier="359/375" id="e3l-qC-Z4u"/>
                             <constraint firstAttribute="height" constant="160" id="jV0-D6-6MI"/>
                             <constraint firstItem="bxc-PN-v8d" firstAttribute="top" secondItem="bmy-am-qSZ" secondAttribute="top" id="jpj-qs-uyB"/>
                             <constraint firstAttribute="bottom" secondItem="TUS-dZ-5PU" secondAttribute="bottom" id="u65-Em-gSZ"/>

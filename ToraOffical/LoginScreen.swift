@@ -57,6 +57,9 @@ class LoginScreen: UIViewController {
     }
     
     @IBAction private func topToUpdatePW(_ sender: Any) {
+        let errorScreen = ErrorScreen()
+        errorScreen.modalPresentationStyle = .overFullScreen
+        present(errorScreen, animated: false, completion: nil)
     }
     
     @IBAction private func tapToLogin(_ sender: Any) {
@@ -65,9 +68,15 @@ class LoginScreen: UIViewController {
     }
     
     @IBAction private func tapToLoginWithFB(_ sender: Any) {
+        let errorScreen = ErrorScreen()
+        errorScreen.modalPresentationStyle = .overFullScreen
+        present(errorScreen, animated: false, completion: nil)
     }
     
     @IBAction private func tapToLoginWithGG(_ sender: Any) {
+        let errorScreen = ErrorScreen()
+        errorScreen.modalPresentationStyle = .overFullScreen
+        present(errorScreen, animated: false, completion: nil)
     }
     
 }

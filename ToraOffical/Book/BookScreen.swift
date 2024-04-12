@@ -20,6 +20,12 @@ class BookScreen: UIViewController {
     
     private func setupUI() {
         buyButton.layer.cornerRadius = 24
+        [bookImage1, bookImage2].forEach{
+            $0.layer.shadowColor = UIColor.black.cgColor
+            $0.layer.shadowOpacity = 2
+            $0.layer.shadowOffset = CGSize(width: 0, height: 10)
+            $0.layer.shadowRadius = 10
+        }
     }
 
     @IBAction func tapToBuy(_ sender: Any) {

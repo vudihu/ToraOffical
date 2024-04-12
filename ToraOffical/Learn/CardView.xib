@@ -78,14 +78,14 @@
                                     <rect key="frame" x="0.0" y="21.666666666666664" width="114" height="94.333333333333343"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khóa học" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbn-C5-9bd">
-                                            <rect key="frame" x="18.666666666666664" y="0.0" width="77" height="21.666666666666668"/>
+                                            <rect key="frame" x="18.666666666666664" y="6.0000000000000018" width="77" height="21.666666666666671"/>
                                             <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikw-78-Jq5">
-                                            <rect key="frame" x="28.333333333333332" y="29.666666666666668" width="57.333333333333343" height="52.666666666666657"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                            <rect key="frame" x="26.333333333333339" y="33.666666666666664" width="61.666666666666657" height="50.999999999999993"/>
+                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="44"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -93,9 +93,9 @@
                                     <color key="backgroundColor" red="0.85098039215686272" green="0.12549019607843137" blue="0.066666666666666666" alpha="1" colorSpace="deviceRGB"/>
                                     <constraints>
                                         <constraint firstItem="ikw-78-Jq5" firstAttribute="centerX" secondItem="M1V-RR-oqS" secondAttribute="centerX" id="1Re-ee-nT2"/>
-                                        <constraint firstItem="Mbn-C5-9bd" firstAttribute="top" secondItem="M1V-RR-oqS" secondAttribute="top" id="4VR-eT-gRG"/>
+                                        <constraint firstItem="Mbn-C5-9bd" firstAttribute="top" secondItem="M1V-RR-oqS" secondAttribute="top" constant="6" id="4VR-eT-gRG"/>
                                         <constraint firstItem="Mbn-C5-9bd" firstAttribute="centerX" secondItem="M1V-RR-oqS" secondAttribute="centerX" id="EbG-Ai-8DN"/>
-                                        <constraint firstItem="ikw-78-Jq5" firstAttribute="top" secondItem="Mbn-C5-9bd" secondAttribute="bottom" constant="8" id="M2g-sI-keZ"/>
+                                        <constraint firstItem="ikw-78-Jq5" firstAttribute="top" secondItem="Mbn-C5-9bd" secondAttribute="bottom" constant="6" id="M2g-sI-keZ"/>
                                     </constraints>
                                 </view>
                             </subviews>

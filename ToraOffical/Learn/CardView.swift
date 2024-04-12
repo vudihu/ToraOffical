@@ -43,6 +43,10 @@ class CardView: UIView {
         [redDotView, yellowDotView, greenDotView].forEach {
             $0?.layer.cornerRadius = 4
         }
+        courseNameView.layer.shadowColor = UIColor.black.cgColor
+        courseNameView.layer.shadowOpacity = 0.5
+        courseNameView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        courseNameView.layer.shadowRadius = 5
       }
     
     func setupDisplay(bgColor: UIColor?, image: UIImage?, courseNumber: String, courseName: String, number: String) {

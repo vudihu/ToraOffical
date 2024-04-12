@@ -18,7 +18,9 @@ class LearnScreen: UIViewController {
     private func setupUI() {
         let cardData = [("gate-icon", "#9F7FD1", "N5", "Khóa học N5", "678"),
                         ("noodle-icon", "#83C579", "N4", "Khóa học N4", "123"),
-                        ("flag-icon", "#5389B9", "N3", "Khóa học N3", "123")]
+                        ("flag-icon", "#5389B9", "N3", "Khóa học N3", "123"),
+                        ("gate-icon", "#33A2C5", "N2", "Khóa học N1", "123"),
+                        ("noodle-icon", "#ECA451", "N1", "Khóa học N1", "123")]
         
         var yOffset: CGFloat = 16
         for data in cardData {
@@ -27,9 +29,6 @@ class LearnScreen: UIViewController {
             scrollView.addSubview(cardView)
             yOffset += cardView.frame.height + 32
         }
-        
         scrollView.contentSize = CGSize(width: scrollView.frame.width, height: yOffset + 16)
     }
-
-
 }
