@@ -9,7 +9,7 @@ import UIKit
 
 class ProfileScreen: UIViewController {
     @IBOutlet private weak var bgView: UIView!
-    @IBOutlet private weak var titleView: UIView!
+    @IBOutlet private weak var imageView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,13 +17,8 @@ class ProfileScreen: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = UIColor.white.withAlphaComponent(0.4)
-        [bgView, titleView].forEach {
+        [bgView, imageView].forEach {
             $0?.layer.cornerRadius = 24
         }
-    }
-
-    @IBAction func tapToClose(_ sender: Any) {
-        dismiss(animated: false, completion: nil)
     }
 }

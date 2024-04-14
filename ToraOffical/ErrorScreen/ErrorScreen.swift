@@ -9,17 +9,17 @@ import UIKit
 
 class ErrorScreen: UIViewController {
     @IBOutlet private weak var bgView: UIView!
-    @IBOutlet private weak var titleView: UIView!
+    @IBOutlet private weak var imageView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
-        [bgView, titleView].forEach {
+        [bgView, imageView].forEach {
             $0.layer.cornerRadius = 24
         }
     }
     
-    @IBAction func tapToClose(_ sender: Any) {
+    @IBAction private func tapToClose(_ sender: Any) {
         dismiss(animated: false, completion: nil)
     }
 }

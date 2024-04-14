@@ -9,6 +9,7 @@ import UIKit
 
 class HomeScreen: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var headerView: UIView!
     private let imageCell: String = "ImageCell"
     private let suggestCell: String = "SuggestCell"
     
@@ -22,6 +23,11 @@ class HomeScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        setupUI()
+    }
+    
+    private func setupUI() {
+
     }
 
     
@@ -35,9 +41,11 @@ extension HomeScreen: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:

@@ -15,6 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreen" customModule="ToraOffical" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="eEu-5p-Yzp" id="5NN-ZA-XVK"/>
                 <outlet property="tableView" destination="02Y-77-hJe" id="O5I-ry-y3k"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,15 +28,25 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0R-fp-Ic8">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tora xin chào," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIa-C2-aJQ">
-                            <rect key="frame" x="25" y="16" width="343" height="42"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEu-5p-Yzp">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="42"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tora xin chào," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIa-C2-aJQ">
+                                    <rect key="frame" x="25" y="0.0" width="343" height="42"/>
+                                    <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="42" id="8CR-P5-bmu"/>
+                                <constraint firstAttribute="bottom" secondItem="zIa-C2-aJQ" secondAttribute="bottom" id="AoQ-bg-3ao"/>
+                                <constraint firstAttribute="height" constant="42" id="Bzr-QE-JJL"/>
+                                <constraint firstItem="zIa-C2-aJQ" firstAttribute="width" secondItem="eEu-5p-Yzp" secondAttribute="width" multiplier="327/375" id="W9W-N9-iO1"/>
+                                <constraint firstItem="zIa-C2-aJQ" firstAttribute="centerX" secondItem="eEu-5p-Yzp" secondAttribute="centerX" id="i0G-Sl-TK3"/>
+                                <constraint firstItem="zIa-C2-aJQ" firstAttribute="top" secondItem="eEu-5p-Yzp" secondAttribute="top" id="vUS-9Q-UAP"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="02Y-77-hJe">
                             <rect key="frame" x="0.0" y="58" width="393" height="701"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -48,12 +59,12 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="02Y-77-hJe" firstAttribute="leading" secondItem="o0R-fp-Ic8" secondAttribute="leading" id="9dI-5c-xM1"/>
+                        <constraint firstItem="02Y-77-hJe" firstAttribute="top" secondItem="eEu-5p-Yzp" secondAttribute="bottom" constant="16" id="I7B-nG-kRf"/>
+                        <constraint firstItem="eEu-5p-Yzp" firstAttribute="top" secondItem="o0R-fp-Ic8" secondAttribute="top" id="JtW-KW-urO"/>
+                        <constraint firstItem="eEu-5p-Yzp" firstAttribute="leading" secondItem="o0R-fp-Ic8" secondAttribute="leading" id="Pax-IC-WVK"/>
                         <constraint firstAttribute="trailing" secondItem="02Y-77-hJe" secondAttribute="trailing" id="a3M-pc-J2p"/>
-                        <constraint firstItem="zIa-C2-aJQ" firstAttribute="width" secondItem="o0R-fp-Ic8" secondAttribute="width" multiplier="327/375" id="kdw-Uv-Tc0"/>
-                        <constraint firstItem="zIa-C2-aJQ" firstAttribute="centerX" secondItem="o0R-fp-Ic8" secondAttribute="centerX" id="nbc-kG-Din"/>
+                        <constraint firstAttribute="trailing" secondItem="eEu-5p-Yzp" secondAttribute="trailing" id="ehh-aB-B4Y"/>
                         <constraint firstAttribute="bottom" secondItem="02Y-77-hJe" secondAttribute="bottom" id="qhl-jH-cN1"/>
-                        <constraint firstItem="02Y-77-hJe" firstAttribute="top" secondItem="zIa-C2-aJQ" secondAttribute="bottom" id="yV2-xf-bWg"/>
-                        <constraint firstItem="zIa-C2-aJQ" firstAttribute="top" secondItem="o0R-fp-Ic8" secondAttribute="top" constant="16" id="zat-AR-h7z"/>
                     </constraints>
                 </view>
             </subviews>

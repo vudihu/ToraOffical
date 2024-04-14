@@ -38,9 +38,8 @@ class SuggestView: UIView {
             view.frame = bounds
             addSubview(view)
         }
-        [bgView, detailView].forEach {
-            $0?.layer.cornerRadius = 16
-        }
+        bgView.layer.cornerRadius = 16
+        bgImage.layer.cornerRadius = 30
     }
     
     func suggestData(icon: UIImage?, title: String, number: String) {
@@ -53,11 +52,11 @@ class SuggestView: UIView {
     func detailData() {
         bgView.isHidden = true
     }
-    @IBAction func tapToSuggest(_ sender: Any) {
+    @IBAction private func tapToSuggest(_ sender: Any) {
         delegate?.tapToViewSuggest(tag: tagValue)
         
     }
-    @IBAction func tapToDetail(_ sender: Any) {
+    @IBAction private func tapToDetail(_ sender: Any) {
         delegate?.tapToViewDetail(tag: tagValue)
         
     }

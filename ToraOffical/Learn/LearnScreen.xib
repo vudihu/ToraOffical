@@ -8,13 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SF-Pro-Rounded-Semibold.ttf">
-            <string>SFRounded-Semibold</string>
+        <array key="SF-Pro-Rounded-Bold.ttf">
+            <string>SFRounded-Bold</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LearnScreen" customModule="ToraOffical" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="Az7-tE-F6j" id="vOg-0u-l54"/>
                 <outlet property="scrollView" destination="Hkx-ww-ziz" id="YTA-L1-i17"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,27 +28,37 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmE-xR-w2m">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Góc học tập" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucR-KU-5A5">
-                            <rect key="frame" x="25" y="16" width="343" height="38"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Az7-tE-F6j">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="42"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Góc học tập" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucR-KU-5A5">
+                                    <rect key="frame" x="25" y="0.0" width="343" height="42"/>
+                                    <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="38" id="AR0-2i-HSs"/>
+                                <constraint firstAttribute="bottom" secondItem="ucR-KU-5A5" secondAttribute="bottom" id="07M-1l-I1y"/>
+                                <constraint firstAttribute="height" constant="42" id="2dG-Ci-VQB"/>
+                                <constraint firstItem="ucR-KU-5A5" firstAttribute="width" secondItem="Az7-tE-F6j" secondAttribute="width" multiplier="327/375" id="66s-SL-WFI"/>
+                                <constraint firstItem="ucR-KU-5A5" firstAttribute="top" secondItem="Az7-tE-F6j" secondAttribute="top" id="Fjq-Q5-7TX"/>
+                                <constraint firstItem="ucR-KU-5A5" firstAttribute="centerX" secondItem="Az7-tE-F6j" secondAttribute="centerX" id="MRN-KB-Tti"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="SFRounded-Semibold" family="SF Pro Rounded" pointSize="28"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkx-ww-ziz">
-                            <rect key="frame" x="0.0" y="54" width="393" height="705"/>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkx-ww-ziz">
+                            <rect key="frame" x="0.0" y="42" width="393" height="717"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </scrollView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="ucR-KU-5A5" firstAttribute="top" secondItem="wmE-xR-w2m" secondAttribute="top" constant="16" id="0aA-iY-3la"/>
-                        <constraint firstItem="Hkx-ww-ziz" firstAttribute="top" secondItem="ucR-KU-5A5" secondAttribute="bottom" id="CBe-2z-OOW"/>
-                        <constraint firstItem="ucR-KU-5A5" firstAttribute="width" secondItem="wmE-xR-w2m" secondAttribute="width" multiplier="327/375" id="HGH-fY-Ix5"/>
+                        <constraint firstItem="Az7-tE-F6j" firstAttribute="leading" secondItem="wmE-xR-w2m" secondAttribute="leading" id="Fpk-na-Dul"/>
+                        <constraint firstItem="Hkx-ww-ziz" firstAttribute="top" secondItem="Az7-tE-F6j" secondAttribute="bottom" id="G9e-2M-EPA"/>
                         <constraint firstItem="Hkx-ww-ziz" firstAttribute="leading" secondItem="wmE-xR-w2m" secondAttribute="leading" id="Ydl-wf-C7Z"/>
-                        <constraint firstItem="ucR-KU-5A5" firstAttribute="centerX" secondItem="wmE-xR-w2m" secondAttribute="centerX" id="hWB-R4-Chi"/>
+                        <constraint firstAttribute="trailing" secondItem="Az7-tE-F6j" secondAttribute="trailing" id="aao-Xp-Q04"/>
+                        <constraint firstItem="Az7-tE-F6j" firstAttribute="top" secondItem="wmE-xR-w2m" secondAttribute="top" id="cvp-ON-1CY"/>
                         <constraint firstAttribute="bottom" secondItem="Hkx-ww-ziz" secondAttribute="bottom" id="uA8-X4-9M7"/>
                         <constraint firstAttribute="trailing" secondItem="Hkx-ww-ziz" secondAttribute="trailing" id="yDA-FU-MsW"/>
                     </constraints>

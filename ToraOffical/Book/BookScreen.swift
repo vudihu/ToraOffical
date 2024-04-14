@@ -9,6 +9,7 @@ import UIKit
 
 class BookScreen: UIViewController {
 
+    @IBOutlet private weak var headerView: UIView!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var buyButton: UIButton!
     @IBOutlet weak var bookImage1: UIImageView!
@@ -28,6 +29,6 @@ class BookScreen: UIViewController {
         }
     }
 
-    @IBAction func tapToBuy(_ sender: Any) {
+    @IBAction private func tapToBuy(_ sender: Any) {
     }
 }

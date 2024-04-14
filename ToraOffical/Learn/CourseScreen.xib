@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Rounded-Bold.ttf">
+            <string>SFRounded-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CourseScreen" customModule="ToraOffical" customModuleProvider="target">
+            <connections>
+                <outlet property="courseNameLabel" destination="Q4S-AF-XLO" id="kuD-0j-pXM"/>
+                <outlet property="courseNameView" destination="7XW-dz-vLe" id="HH2-2X-sku"/>
+                <outlet property="tableView" destination="O7v-Te-zOa" id="SQa-ra-HpR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FgD-Sr-c1o">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zrt-bu-ys5">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="42"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zus-le-tV9">
+                                    <rect key="frame" x="8" y="0.0" width="42" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="42" id="GhM-90-QbT"/>
+                                    </constraints>
+                                    <color key="tintColor" systemColor="systemGray2Color"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
+                                    <connections>
+                                        <action selector="tapToBack:" destination="-1" eventType="touchUpInside" id="imb-rC-kgP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="zus-le-tV9" firstAttribute="leading" secondItem="Zrt-bu-ys5" secondAttribute="leading" constant="8" id="5Vy-o0-95j"/>
+                                <constraint firstAttribute="height" constant="42" id="QqT-x3-hvx"/>
+                                <constraint firstAttribute="bottom" secondItem="zus-le-tV9" secondAttribute="bottom" id="b3M-9Q-nQr"/>
+                                <constraint firstItem="zus-le-tV9" firstAttribute="top" secondItem="Zrt-bu-ys5" secondAttribute="top" id="hJA-7a-DW6"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XW-dz-vLe">
+                            <rect key="frame" x="205" y="42" width="188" height="36"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khóa học N5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4S-AF-XLO">
+                                    <rect key="frame" x="35.999999999999993" y="6" width="116.33333333333331" height="24"/>
+                                    <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.62352941176470589" green="0.49803921568627452" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="8yv-hp-gm1"/>
+                                <constraint firstAttribute="width" constant="188" id="AxF-2g-bhQ"/>
+                                <constraint firstItem="Q4S-AF-XLO" firstAttribute="centerX" secondItem="7XW-dz-vLe" secondAttribute="centerX" id="YqG-dv-7pu"/>
+                                <constraint firstItem="Q4S-AF-XLO" firstAttribute="centerY" secondItem="7XW-dz-vLe" secondAttribute="centerY" id="rzf-In-cDO"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O7v-Te-zOa">
+                            <rect key="frame" x="0.0" y="94" width="393" height="665"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Ebu-Un-ENS"/>
+                                <outlet property="delegate" destination="-1" id="UAW-tP-XmW"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="O7v-Te-zOa" secondAttribute="trailing" id="HHy-iF-Lwr"/>
+                        <constraint firstItem="Zrt-bu-ys5" firstAttribute="leading" secondItem="FgD-Sr-c1o" secondAttribute="leading" id="JJb-Wn-OcH"/>
+                        <constraint firstAttribute="trailing" secondItem="7XW-dz-vLe" secondAttribute="trailing" id="QVF-Pa-VMt"/>
+                        <constraint firstItem="O7v-Te-zOa" firstAttribute="leading" secondItem="FgD-Sr-c1o" secondAttribute="leading" id="Zzs-Id-E1Z"/>
+                        <constraint firstItem="O7v-Te-zOa" firstAttribute="top" secondItem="7XW-dz-vLe" secondAttribute="bottom" constant="16" id="cUG-Si-FYH"/>
+                        <constraint firstAttribute="bottom" secondItem="O7v-Te-zOa" secondAttribute="bottom" id="k1R-Mh-JDI"/>
+                        <constraint firstAttribute="trailing" secondItem="Zrt-bu-ys5" secondAttribute="trailing" id="kuj-vO-eQm"/>
+                        <constraint firstItem="7XW-dz-vLe" firstAttribute="top" secondItem="Zrt-bu-ys5" secondAttribute="bottom" id="ohs-Dp-fdJ"/>
+                        <constraint firstItem="Zrt-bu-ys5" firstAttribute="top" secondItem="FgD-Sr-c1o" secondAttribute="top" id="vP8-dG-5Nu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FgD-Sr-c1o" secondAttribute="bottom" id="4yb-d8-kfX"/>
+                <constraint firstItem="FgD-Sr-c1o" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Htr-98-cls"/>
+                <constraint firstItem="FgD-Sr-c1o" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NJq-tG-Xny"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FgD-Sr-c1o" secondAttribute="trailing" id="iky-hE-SzZ"/>
+            </constraints>
+            <point key="canvasLocation" x="65" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

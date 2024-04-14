@@ -10,15 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="132" id="KGk-i7-Jjw" customClass="ImageCell" customModule="ToraOffical" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="KGk-i7-Jjw" customClass="ImageCell" customModule="ToraOffical" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGG-TU-APH">
-                        <rect key="frame" x="0.0" y="6" width="375" height="120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YT-image" translatesAutoresizingMaskIntoConstraints="NO" id="49C-Jw-Njg">
                                 <rect key="frame" x="24" y="0.0" width="327" height="120"/>
@@ -51,16 +51,16 @@
                 <constraints>
                     <constraint firstItem="dGG-TU-APH" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="Dgb-Oe-Xd4"/>
                     <constraint firstAttribute="trailing" secondItem="dGG-TU-APH" secondAttribute="trailing" id="Fv6-yw-ywA"/>
-                    <constraint firstAttribute="bottom" secondItem="dGG-TU-APH" secondAttribute="bottom" constant="6" id="Lcr-yf-mvO"/>
+                    <constraint firstAttribute="bottom" secondItem="dGG-TU-APH" secondAttribute="bottom" constant="16" id="Lcr-yf-mvO"/>
                     <constraint firstItem="dGG-TU-APH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eGi-s9-Vqa"/>
-                    <constraint firstItem="dGG-TU-APH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="ovP-a2-U4a"/>
+                    <constraint firstItem="dGG-TU-APH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ovP-a2-U4a"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bgImage" destination="49C-Jw-Njg" id="PJf-Pa-qzR"/>
             </connections>
-            <point key="canvasLocation" x="154.96183206106869" y="-33.802816901408455"/>
+            <point key="canvasLocation" x="154.96183206106869" y="-33.450704225352112"/>
         </tableViewCell>
     </objects>
     <resources>

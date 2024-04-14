@@ -19,7 +19,7 @@ class ImageCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    @IBAction func tapToLinkYT(_ sender: Any) {
+    @IBAction private func tapToLinkYT(_ sender: Any) {
         self.delegate?.actionTap()
     }
 }

@@ -56,7 +56,7 @@ class OnboardingScreen: UIViewController {
         nextButton.layer.cornerRadius = 32
     }
     
-    @IBAction func tapToNext(_ sender: Any) {
+    @IBAction private func tapToNext(_ sender: Any) {
         tapCount += 1
         if tapCount < titleArr.count || tapCount < descriptionArr.count || tapCount < imagenArr.count {
             titleLabel.text = titleArr[tapCount]

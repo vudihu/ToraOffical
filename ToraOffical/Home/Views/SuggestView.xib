@@ -14,6 +14,9 @@
         <array key="SF-Pro-Rounded-Regular.ttf">
             <string>SFRounded-Regular</string>
         </array>
+        <array key="SF-Pro-Rounded-Semibold.ttf">
+            <string>SFRounded-Semibold</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuggestView" customModule="ToraOffical" customModuleProvider="target">
@@ -92,9 +95,15 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKj-Oa-eri">
                                     <rect key="frame" x="0.0" y="137" width="124" height="124"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gkW-0q-w51">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle" translatesAutoresizingMaskIntoConstraints="NO" id="gkW-0q-w51">
                                             <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdP-Sc-pi5">
+                                            <rect key="frame" x="62" y="62" width="0.0" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFRounded-Semibold" family="SF Pro Rounded" pointSize="18"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7l7-f9-iQb">
                                             <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
                                             <state key="normal" title="Button"/>
@@ -104,17 +113,19 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
+                                        <constraint firstItem="gkW-0q-w51" firstAttribute="leading" secondItem="QKj-Oa-eri" secondAttribute="leading" id="9Lt-1B-rGd"/>
                                         <constraint firstAttribute="height" constant="124" id="CPP-IJ-a9p"/>
                                         <constraint firstItem="7l7-f9-iQb" firstAttribute="top" secondItem="QKj-Oa-eri" secondAttribute="top" id="GRy-9K-eNY"/>
+                                        <constraint firstAttribute="trailing" secondItem="gkW-0q-w51" secondAttribute="trailing" id="Jog-zt-icT"/>
                                         <constraint firstAttribute="trailing" secondItem="7l7-f9-iQb" secondAttribute="trailing" id="MnI-9I-K41"/>
                                         <constraint firstAttribute="bottom" secondItem="7l7-f9-iQb" secondAttribute="bottom" id="R58-gc-Bbp"/>
                                         <constraint firstItem="7l7-f9-iQb" firstAttribute="leading" secondItem="QKj-Oa-eri" secondAttribute="leading" id="UVA-Ik-ruv"/>
-                                        <constraint firstAttribute="trailing" secondItem="gkW-0q-w51" secondAttribute="trailing" id="ZFn-9T-tmC"/>
-                                        <constraint firstItem="gkW-0q-w51" firstAttribute="top" secondItem="QKj-Oa-eri" secondAttribute="top" id="aLz-Ue-iuT"/>
-                                        <constraint firstAttribute="bottom" secondItem="gkW-0q-w51" secondAttribute="bottom" id="n1I-Qh-L2w"/>
-                                        <constraint firstItem="gkW-0q-w51" firstAttribute="leading" secondItem="QKj-Oa-eri" secondAttribute="leading" id="xUb-Ii-3w4"/>
+                                        <constraint firstItem="gkW-0q-w51" firstAttribute="top" secondItem="QKj-Oa-eri" secondAttribute="top" id="hQJ-43-6sb"/>
+                                        <constraint firstItem="gdP-Sc-pi5" firstAttribute="centerY" secondItem="QKj-Oa-eri" secondAttribute="centerY" id="hrq-AK-XJx"/>
+                                        <constraint firstAttribute="bottom" secondItem="gkW-0q-w51" secondAttribute="bottom" id="tYH-M5-Xbr"/>
+                                        <constraint firstItem="gdP-Sc-pi5" firstAttribute="centerX" secondItem="QKj-Oa-eri" secondAttribute="centerX" id="zib-sG-Ofy"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -142,7 +153,7 @@
         </view>
     </objects>
     <resources>
-        <image name="logo" width="649.33331298828125" height="649.33331298828125"/>
+        <image name="bicycle" width="288" height="192"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

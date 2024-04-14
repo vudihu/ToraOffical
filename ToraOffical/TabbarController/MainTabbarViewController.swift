@@ -46,6 +46,6 @@ class MainTabbarViewController: ESTabBarController {
         self.tabBar.layer.shadowOpacity = 0.2
         self.tabBar.layer.shadowOffset = CGSize(width: 0, height: 4)
         self.tabBar.layer.shadowRadius = 10
-        self.selectedViewController = homeScreen
+        self.selectedViewController = learnScreen
     }
 }
