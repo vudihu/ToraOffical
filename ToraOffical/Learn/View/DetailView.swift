@@ -7,10 +7,15 @@
 
 import UIKit
 
+protocol DetailViewDelegate: AnyObject {
+    func tapNumberLesson()
+}
+
 class DetailView: UIView {
     @IBOutlet private weak var backgroundView: UIView!
     @IBOutlet weak var subView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
+    var delegate: DetailViewDelegate?
     
     override init(frame: CGRect) {
          super.init(frame: frame)
@@ -29,10 +34,14 @@ class DetailView: UIView {
               addSubview(view)
           }
         backgroundView.layer.cornerRadius = 35
-        subView.layer.cornerRadius = 30
-//        backgroundView.layer.borderWidth = 0.5
-//        backgroundView.layer.borderColor = UIColor.black.cgColor
+        subView.layer.cornerRadius = 25
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapView))
+        backgroundView.addGestureRecognizer(tapGesture)
       }
+    
+    @objc private func handleTapView() {
+        delegate?.tapNumberLesson()
+    }
     
     func displayData(title: String) {
         titleLabel.text = title

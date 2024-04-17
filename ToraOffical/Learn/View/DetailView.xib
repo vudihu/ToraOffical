@@ -29,25 +29,25 @@
                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXB-EL-Erm">
-                            <rect key="frame" x="10" y="10" width="60" height="60"/>
+                            <rect key="frame" x="15" y="15" width="50" height="50"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bài 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sQ-Sd-v4M">
-                                    <rect key="frame" x="17.666666666666664" y="23" width="24.666666666666664" height="14.333333333333336"/>
+                                    <rect key="frame" x="12.666666666666666" y="18" width="24.666666666666671" height="14"/>
                                     <fontDescription key="fontDescription" name="SFRounded-Semibold" family="SF Pro Rounded" pointSize="12"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="5sQ-Sd-v4M" firstAttribute="centerY" secondItem="sXB-EL-Erm" secondAttribute="centerY" id="MYA-PZ-KvT"/>
                                 <constraint firstItem="5sQ-Sd-v4M" firstAttribute="centerX" secondItem="sXB-EL-Erm" secondAttribute="centerX" id="PO6-uZ-xMc"/>
-                                <constraint firstAttribute="height" constant="60" id="ZkK-cB-NV9"/>
-                                <constraint firstAttribute="width" constant="60" id="f3r-y0-nXC"/>
+                                <constraint firstAttribute="height" constant="50" id="ZkK-cB-NV9"/>
+                                <constraint firstAttribute="width" constant="50" id="f3r-y0-nXC"/>
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <constraints>
                         <constraint firstItem="sXB-EL-Erm" firstAttribute="centerY" secondItem="7Pb-nM-2im" secondAttribute="centerY" id="IkP-ox-sq8"/>
                         <constraint firstItem="sXB-EL-Erm" firstAttribute="centerX" secondItem="7Pb-nM-2im" secondAttribute="centerX" id="ydG-kX-uKn"/>
@@ -70,11 +70,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

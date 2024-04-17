@@ -94,6 +94,7 @@ extension CourseScreen: UITableViewDelegate, UITableViewDataSource {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
             cell.displayData(icon: "BookBookmark", title: "kaiwa")
+            cell.delegate = self
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
@@ -130,5 +131,13 @@ extension CourseScreen: UITableViewDelegate, UITableViewDataSource {
         default:
             fatalError("Unhandled indexPath: \(indexPath)")
         }
+    }
+}
+
+extension CourseScreen: CourseCellDelegate {
+    func reloadTableView() {
+        tableView.reloadData()
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
 }

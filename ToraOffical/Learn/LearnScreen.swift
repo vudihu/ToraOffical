@@ -68,3 +68,10 @@ extension LearnScreen: CardViewDelegate {
         navigationController?.pushViewController(courseScreen, animated: true)
     }
 }
+
+extension CourseCell: DetailViewDelegate {
+    func tapNumberLesson() {
+//        let videoScreen = VideoScreen()
+//        navigationController?.pushViewController(videoScreen, animated: true)
+    }
+}
