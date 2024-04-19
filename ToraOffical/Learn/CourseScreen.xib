@@ -15,9 +15,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CourseScreen" customModule="ToraOffical" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="nQ0-Et-62n" id="Del-zN-sk5"/>
                 <outlet property="courseNameLabel" destination="Q4S-AF-XLO" id="kuD-0j-pXM"/>
                 <outlet property="courseNameView" destination="7XW-dz-vLe" id="HH2-2X-sku"/>
-                <outlet property="tableView" destination="O7v-Te-zOa" id="SQa-ra-HpR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -71,23 +71,29 @@
                                 <constraint firstItem="Q4S-AF-XLO" firstAttribute="centerY" secondItem="7XW-dz-vLe" secondAttribute="centerY" id="rzf-In-cDO"/>
                             </constraints>
                         </view>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O7v-Te-zOa">
-                            <rect key="frame" x="0.0" y="94" width="393" height="665"/>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nQ0-Et-62n">
+                            <rect key="frame" x="25" y="94" width="343" height="665"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hOg-mC-9QE">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
                             <connections>
-                                <outlet property="dataSource" destination="-1" id="Ebu-Un-ENS"/>
-                                <outlet property="delegate" destination="-1" id="UAW-tP-XmW"/>
+                                <outlet property="dataSource" destination="-1" id="Wpi-d1-GVo"/>
+                                <outlet property="delegate" destination="-1" id="ycv-ze-qOu"/>
                             </connections>
-                        </tableView>
+                        </collectionView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="O7v-Te-zOa" secondAttribute="trailing" id="HHy-iF-Lwr"/>
+                        <constraint firstItem="nQ0-Et-62n" firstAttribute="width" secondItem="FgD-Sr-c1o" secondAttribute="width" multiplier="327/375" id="8LE-6h-nRh"/>
                         <constraint firstItem="Zrt-bu-ys5" firstAttribute="leading" secondItem="FgD-Sr-c1o" secondAttribute="leading" id="JJb-Wn-OcH"/>
+                        <constraint firstItem="nQ0-Et-62n" firstAttribute="centerX" secondItem="FgD-Sr-c1o" secondAttribute="centerX" id="Mz1-57-fXl"/>
+                        <constraint firstItem="nQ0-Et-62n" firstAttribute="top" secondItem="7XW-dz-vLe" secondAttribute="bottom" constant="16" id="NfW-Z9-Rh6"/>
                         <constraint firstAttribute="trailing" secondItem="7XW-dz-vLe" secondAttribute="trailing" id="QVF-Pa-VMt"/>
-                        <constraint firstItem="O7v-Te-zOa" firstAttribute="leading" secondItem="FgD-Sr-c1o" secondAttribute="leading" id="Zzs-Id-E1Z"/>
-                        <constraint firstItem="O7v-Te-zOa" firstAttribute="top" secondItem="7XW-dz-vLe" secondAttribute="bottom" constant="16" id="cUG-Si-FYH"/>
-                        <constraint firstAttribute="bottom" secondItem="O7v-Te-zOa" secondAttribute="bottom" id="k1R-Mh-JDI"/>
+                        <constraint firstAttribute="bottom" secondItem="nQ0-Et-62n" secondAttribute="bottom" id="jIJ-OZ-HJT"/>
                         <constraint firstAttribute="trailing" secondItem="Zrt-bu-ys5" secondAttribute="trailing" id="kuj-vO-eQm"/>
                         <constraint firstItem="7XW-dz-vLe" firstAttribute="top" secondItem="Zrt-bu-ys5" secondAttribute="bottom" id="ohs-Dp-fdJ"/>
                         <constraint firstItem="Zrt-bu-ys5" firstAttribute="top" secondItem="FgD-Sr-c1o" secondAttribute="top" id="vP8-dG-5Nu"/>

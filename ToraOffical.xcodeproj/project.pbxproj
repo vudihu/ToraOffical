@@ -26,6 +26,8 @@
 		CB4B2DD92B94C613008BA1B2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2DD82B94C613008BA1B2 /* LoginScreen.swift */; };
 		CB4B2DDC2B94C613008BA1B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDA2B94C613008BA1B2 /* Main.storyboard */; };
 		CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDF2B94C614008BA1B2 /* LaunchScreen.storyboard */; };
+		CB6CDC582BD0B0A500491B81 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CDC562BD0B0A500491B81 /* CourseCell.swift */; };
+		CB6CDC592BD0B0A500491B81 /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB6CDC572BD0B0A500491B81 /* CourseCell.xib */; };
 		CB73EFCC2BBC47940007A0EE /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFCB2BBC47940007A0EE /* ExampleBasicContentView.swift */; };
 		CB73EFCE2BBCC0180007A0EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFCD2BBCC0180007A0EE /* CardView.swift */; };
 		CB73EFD02BBCC03A0007A0EE /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB73EFCF2BBCC03A0007A0EE /* CardView.xib */; };
@@ -45,8 +47,6 @@
 		CBE716EB2BC9493800A516A6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE716EA2BC9493800A516A6 /* DetailView.swift */; };
 		CBE716ED2BC9494400A516A6 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE716EC2BC9494400A516A6 /* DetailView.xib */; };
 		CBE716EE2BC96E7B00A516A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */; };
-		CBE716F22BCA71E700A516A6 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE716F02BCA71E700A516A6 /* CourseCell.swift */; };
-		CBE716F32BCA71E700A516A6 /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE716F12BCA71E700A516A6 /* CourseCell.xib */; };
 		CBE716F62BCACE8400A516A6 /* VideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE716F42BCACE8400A516A6 /* VideoScreen.swift */; };
 		CBE716F72BCACE8400A516A6 /* VideoScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE716F52BCACE8400A516A6 /* VideoScreen.xib */; };
 /* End PBXBuildFile section */
@@ -74,6 +74,8 @@
 		CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4B2DE02B94C614008BA1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4B2DE22B94C614008BA1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6CDC562BD0B0A500491B81 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		CB6CDC572BD0B0A500491B81 /* CourseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
 		CB73EFCB2BBC47940007A0EE /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
 		CB73EFCD2BBCC0180007A0EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CB73EFCF2BBCC03A0007A0EE /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
@@ -92,8 +94,6 @@
 		CBE27A192BC23DE200FCE0EA /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		CBE716EA2BC9493800A516A6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CBE716EC2BC9494400A516A6 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
-		CBE716F02BCA71E700A516A6 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
-		CBE716F12BCA71E700A516A6 /* CourseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
 		CBE716F42BCACE8400A516A6 /* VideoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreen.swift; sourceTree = "<group>"; };
 		CBE716F52BCACE8400A516A6 /* VideoScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoScreen.xib; sourceTree = "<group>"; };
 		F4AB2409855F840BF015EB48 /* Pods-ToraOffical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToraOffical.debug.xcconfig"; path = "Target Support Files/Pods-ToraOffical/Pods-ToraOffical.debug.xcconfig"; sourceTree = "<group>"; };
@@ -286,8 +286,8 @@
 		CBE716EF2BCA71B400A516A6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CBE716F02BCA71E700A516A6 /* CourseCell.swift */,
-				CBE716F12BCA71E700A516A6 /* CourseCell.xib */,
+				CB6CDC562BD0B0A500491B81 /* CourseCell.swift */,
+				CB6CDC572BD0B0A500491B81 /* CourseCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -353,7 +353,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE27A1B2BC23DE200FCE0EA /* ImageCell.xib in Resources */,
-				CBE716F32BCA71E700A516A6 /* CourseCell.xib in Resources */,
 				CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */,
 				CB9FD9D52BC93A34008CF4C5 /* CourseScreen.xib in Resources */,
 				CBE716EE2BC96E7B00A516A6 /* Assets.xcassets in Resources */,
@@ -361,6 +360,7 @@
 				CBE716ED2BC9494400A516A6 /* DetailView.xib in Resources */,
 				CBE27A172BC23DCE00FCE0EA /* SuggestCell.xib in Resources */,
 				CB73EFD02BBCC03A0007A0EE /* CardView.xib in Resources */,
+				CB6CDC592BD0B0A500491B81 /* CourseCell.xib in Resources */,
 				CB73EFD42BBCC9310007A0EE /* ErrorScreen.xib in Resources */,
 				CB2584082BA58A3800FF6DEC /* Localizable.strings in Resources */,
 				CB36BFEA2B9C567500E63D38 /* SF-Pro-Rounded-Regular.ttf in Resources */,
@@ -427,8 +427,8 @@
 				CB36BFEE2B9C9AFC00E63D38 /* OnboardingScreen.swift in Sources */,
 				CB4B2DD92B94C613008BA1B2 /* LoginScreen.swift in Sources */,
 				CBE27A0A2BC194C300FCE0EA /* SuggestView.swift in Sources */,
+				CB6CDC582BD0B0A500491B81 /* CourseCell.swift in Sources */,
 				CB73EFD32BBCC9310007A0EE /* ErrorScreen.swift in Sources */,
-				CBE716F22BCA71E700A516A6 /* CourseCell.swift in Sources */,
 				CBE27A162BC23DCE00FCE0EA /* SuggestCell.swift in Sources */,
 				CB2584122BA58F7700FF6DEC /* LearnScreen.swift in Sources */,
 				CBE27A082BC11BAC00FCE0EA /* UIViewExtension.swift in Sources */,

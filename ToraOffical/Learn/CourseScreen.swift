@@ -49,16 +49,16 @@ class CourseScreen: UIViewController {
     
     @IBOutlet private weak var courseNameView: UIView!
     @IBOutlet private weak var courseNameLabel: UILabel!
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var collectionView: UICollectionView!
     private let courseCell = "CourseCell"
     var screenType: ScreenType = .n1Course
-    
-    
+    var listCourse: [String] = []
+    var listLession: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupTableView()
+        setupCollectionView()
     }
     
     private func setupUI() {
@@ -67,8 +67,14 @@ class CourseScreen: UIViewController {
         courseNameView.roundCorners(corners: [.bottomLeft, .topLeft], radius: 18)
     }
     
-    private func setupTableView() {
-        tableView.register(UINib(nibName: courseCell, bundle: nil), forCellReuseIdentifier: courseCell)
+    private func setupCollectionView() {
+        collectionView.register(UINib(nibName: courseCell, bundle: nil), forCellWithReuseIdentifier: courseCell)
+        if let collectionViewFlowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            collectionViewFlowLayout.minimumLineSpacing = 10
+            collectionViewFlowLayout.minimumLineSpacing = 15
+        }
+        listCourse = ["aaa", "bbb", "ccc", "ddd"]
+        listLession = ["Bai 1", "Bai 2", "bai 3"]
     }
 
     @IBAction func tapToBack(_ sender: Any) {
@@ -83,61 +89,20 @@ class CourseScreen: UIViewController {
     }
 }
 
-extension CourseScreen: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        9
+extension CourseScreen: UICollectionViewDelegate, UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return listCourse.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.row {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
-            cell.displayData(icon: "BookBookmark", title: "kaiwa")
-            cell.delegate = self
-            return cell
-        case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
-            cell.displayData(icon: "Clipboard", title: "Từ vựng")
-            return cell
-        case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
-            cell.displayData(icon: "Note", title: "Ngữ pháp")
-            return cell
-        case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
-            cell.displayData(icon: "Headphones", title: "Luyện nghe")
-            return cell
-        case 4:
-            let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
-            cell.displayData(icon: "bookClose", title: "JLPT")
-            return cell
-        case 5:
-            let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
-            cell.displayData(icon: "BookOpen", title: "Bài giảng")
-            return cell
-        case 6:
-            let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
-            cell.displayData(icon: "Translate", title: "Chữ Hán")
-            return cell
-        case 7:
-            let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
-            cell.displayData(icon: "Microphone", title: "Luyện đọc")
-            return cell
-        case 8:
-            let cell = tableView.dequeueReusableCell(withIdentifier: courseCell) as! CourseCell
-            cell.displayData(icon: "PlayCircle", title: "Tổng hợp")
-            return cell
-        default:
-            fatalError("Unhandled indexPath: \(indexPath)")
-        }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return listLession.count
     }
-}
-
-extension CourseScreen: CourseCellDelegate {
-    func reloadTableView() {
-        tableView.reloadData()
-        tableView.beginUpdates()
-        tableView.endUpdates()
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CourseCell", for: indexPath) as! CourseCell
+        cell.lessionLabel.text = self.listLession[indexPath.item]
+        return cell
     }
+    
+    
 }
