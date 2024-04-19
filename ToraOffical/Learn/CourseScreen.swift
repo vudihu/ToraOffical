@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CourseScreen: UIViewController {
+class CourseScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     enum ScreenType {
         case n5Course
@@ -47,36 +47,106 @@ class CourseScreen: UIViewController {
         }
     }
     
+    enum ListCourse {
+        case kaiwa
+        case word
+        case grammar
+        case listen
+        case JLPT
+        case learn
+        case han
+        case read
+        case all
+    }
+    
     @IBOutlet private weak var courseNameView: UIView!
     @IBOutlet private weak var courseNameLabel: UILabel!
-    @IBOutlet private weak var collectionView: UICollectionView!
-    private let courseCell = "CourseCell"
+    @IBOutlet private weak var tableView: UITableView!
+    private let tableViewCourseCell = "TableViewCourseCell"
     var screenType: ScreenType = .n1Course
-    var listCourse: [String] = []
-    var listLession: [String] = []
+    var listCourse: [ListCourse] = [.kaiwa, .word, .grammar, .listen, .JLPT, .learn, .han, .read, .all]
+    var listTitle: [String]  = ["kaiwa", "Từ vựng", "Ngữ pháp", "Luyện nghe", "JLPT", "Bài giảng", "Chữ Hán", "Luyện đọc", "Tổng hợp"]
+    var lessons: [[String]] =  [["Bài 1", "Bài 2"],
+                                ["Bài 1", "Bài 2", "Bài 3"],
+                                ["Bài 1", "Bài 2"],
+                                ["Bài 1", "Bài 2"],
+                                ["Bài 1", "Bài 2", "Bài 3"],
+                                ["Bài 1", "Bài 2", "Bài 3", "Bài 4"],
+                                ["Bài 1", "Bài 2"],
+                                ["Bài 1", "Bài 2"],
+                                ["Bài 1", "Bài 2", "Bài 3"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupCollectionView()
+        setupTableView()
     }
     
     private func setupUI() {
         courseNameLabel.text = screenType.title
         courseNameView.backgroundColor = UIColor(hexString: screenType.color)
         courseNameView.roundCorners(corners: [.bottomLeft, .topLeft], radius: 18)
+        tableView.layer.cornerRadius = 8
     }
     
-    private func setupCollectionView() {
-        collectionView.register(UINib(nibName: courseCell, bundle: nil), forCellWithReuseIdentifier: courseCell)
-        if let collectionViewFlowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            collectionViewFlowLayout.minimumLineSpacing = 10
-            collectionViewFlowLayout.minimumLineSpacing = 15
+    private func setupTableView() {
+        tableView.register(UINib(nibName: tableViewCourseCell, bundle: nil), forCellReuseIdentifier: tableViewCourseCell)
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return listCourse.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let section = listCourse[section]
+        switch section {
+        case .kaiwa:
+            return lessons[0].count
+        case .word:
+            return lessons[1].count
+        case .grammar:
+            return lessons[2].count
+        case .listen:
+            return lessons[3].count
+        case .JLPT:
+            return lessons[4].count
+        case .learn:
+            return lessons[5].count
+        case .han:
+            return lessons[6].count
+        case .read:
+            return lessons[7].count
+        case .all:
+            return lessons[8].count
         }
-        listCourse = ["aaa", "bbb", "ccc", "ddd"]
-        listLession = ["Bai 1", "Bai 2", "bai 3"]
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: tableViewCourseCell, for: indexPath) as! TableViewCourseCell
+        cell.delegate = self
+        cell.titleLabel?.text = lessons[indexPath.section][indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return listTitle[section]
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 52
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView else { return }
+        headerView.contentView.backgroundColor = UIColor.systemGray6
+        headerView.contentView.layer.cornerRadius = 8
+        if let titleLabel = headerView.textLabel {
+            titleLabel.font = UIFont(name: "SFRounded-Bold", size: 18)
+            titleLabel.textColor = UIColor(hexString: screenType.color)
+        }
     }
 
+    
     @IBAction func tapToBack(_ sender: Any) {
         if let tabbar = navigationController?.viewControllers.first(where: { $0 is MainTabbarViewController }) as? MainTabbarViewController {
             // Đặt selectedViewController của tabbar thành LearnScreen
@@ -89,20 +159,9 @@ class CourseScreen: UIViewController {
     }
 }
 
-extension CourseScreen: UICollectionViewDelegate, UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return listCourse.count
+extension CourseScreen: TableViewCourseCellDelegate {
+    func tapAction() {
+        let videoScreen = VideoScreen()
+        navigationController?.pushViewController(videoScreen, animated: true)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listLession.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CourseCell", for: indexPath) as! CourseCell
-        cell.lessionLabel.text = self.listLession[indexPath.item]
-        return cell
-    }
-    
-    
 }

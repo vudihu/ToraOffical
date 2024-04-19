@@ -16,6 +16,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoScreen" customModule="ToraOffical" customModuleProvider="target">
             <connections>
                 <outlet property="pdfView" destination="FnS-Gv-Slv" id="8Pr-RT-0i2"/>
+                <outlet property="playImage" destination="IYd-RX-RZ1" id="tBT-JU-YtJ"/>
                 <outlet property="titleHeader" destination="kL2-gh-2ae" id="rMd-nx-rrV"/>
                 <outlet property="videoView" destination="syJ-7T-aO8" id="2Dc-Ip-uey"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -46,7 +47,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kaiwa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL2-gh-2ae">
-                                    <rect key="frame" x="164.66666666666666" y="6.6666666666666732" width="64" height="28.666666666666671"/>
+                                    <rect key="frame" x="164.66666666666666" y="7" width="64" height="28"/>
                                     <fontDescription key="fontDescription" name="SFRounded-Bold" family="SF Pro Rounded" pointSize="24"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -68,23 +69,34 @@
                                 <constraint firstAttribute="height" constant="200" id="ble-Ew-Pbl"/>
                             </constraints>
                         </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-RX-RZ1">
+                            <rect key="frame" x="166.66666666666666" y="129" width="60" height="58.666666666666686"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="YS1-L4-6Kd"/>
+                                <constraint firstAttribute="width" constant="60" id="d9g-V6-ppS"/>
+                            </constraints>
+                        </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnS-Gv-Slv">
-                            <rect key="frame" x="25" y="266" width="343" height="493"/>
+                            <rect key="frame" x="0.0" y="266" width="393" height="493"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="IYd-RX-RZ1" firstAttribute="centerX" secondItem="syJ-7T-aO8" secondAttribute="centerX" id="6Gu-xw-Gxe"/>
                         <constraint firstItem="AHH-nJ-YQh" firstAttribute="top" secondItem="epb-y5-RPC" secondAttribute="top" id="8dx-kx-JET"/>
                         <constraint firstAttribute="bottom" secondItem="FnS-Gv-Slv" secondAttribute="bottom" id="9PL-oR-alS"/>
+                        <constraint firstAttribute="trailing" secondItem="FnS-Gv-Slv" secondAttribute="trailing" id="BKK-hx-Pr5"/>
                         <constraint firstItem="FnS-Gv-Slv" firstAttribute="centerX" secondItem="epb-y5-RPC" secondAttribute="centerX" id="CfP-f6-EBB"/>
+                        <constraint firstItem="FnS-Gv-Slv" firstAttribute="leading" secondItem="epb-y5-RPC" secondAttribute="leading" id="SOE-zE-dxn"/>
                         <constraint firstItem="syJ-7T-aO8" firstAttribute="top" secondItem="AHH-nJ-YQh" secondAttribute="bottom" constant="16" id="TVo-Oo-SDg"/>
                         <constraint firstItem="AHH-nJ-YQh" firstAttribute="leading" secondItem="epb-y5-RPC" secondAttribute="leading" id="Zpy-xg-t2k"/>
                         <constraint firstAttribute="trailing" secondItem="AHH-nJ-YQh" secondAttribute="trailing" id="av0-sm-0V1"/>
                         <constraint firstItem="FnS-Gv-Slv" firstAttribute="top" secondItem="syJ-7T-aO8" secondAttribute="bottom" constant="8" id="bkS-L1-IOY"/>
-                        <constraint firstItem="FnS-Gv-Slv" firstAttribute="width" secondItem="epb-y5-RPC" secondAttribute="width" multiplier="327/375" id="cad-cQ-hVm"/>
                         <constraint firstItem="syJ-7T-aO8" firstAttribute="centerX" secondItem="epb-y5-RPC" secondAttribute="centerX" id="ePJ-2z-yZY"/>
                         <constraint firstItem="syJ-7T-aO8" firstAttribute="width" secondItem="epb-y5-RPC" secondAttribute="width" id="efh-B6-ewq"/>
+                        <constraint firstItem="IYd-RX-RZ1" firstAttribute="centerY" secondItem="syJ-7T-aO8" secondAttribute="centerY" id="ift-qG-W3k"/>
                     </constraints>
                 </view>
             </subviews>
@@ -101,6 +113,7 @@
     </objects>
     <resources>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="play.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

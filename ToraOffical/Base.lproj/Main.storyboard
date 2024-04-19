@@ -84,7 +84,7 @@ Tora</string>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pO0-Ca-ten">
                                                                 <rect key="frame" x="6" y="0.0" width="38" height="16"/>
                                                                 <fontDescription key="fontDescription" name="SFRounded-Regular" family="SF Pro Rounded" pointSize="14"/>
-                                                                <color key="textColor" red="0.50588235294117645" green="0.62745098039215685" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -125,7 +125,7 @@ Tora</string>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hls-nU-QaC">
                                                                 <rect key="frame" x="6.0000000000000036" y="0.0" width="54.333333333333343" height="16"/>
                                                                 <fontDescription key="fontDescription" name="SFRounded-Regular" family="SF Pro Rounded" pointSize="14"/>
-                                                                <color key="textColor" red="0.50588235290000005" green="0.62745098040000002" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>

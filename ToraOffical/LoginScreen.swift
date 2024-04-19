@@ -141,16 +141,20 @@ extension LoginScreen: UITextFieldDelegate {
         if textField == emailTextField {
             if newText.isEmpty || (!isValidEmail(newText)) {
                 emailTextField.layer.borderColor = UIColor.red.cgColor
+                emailLabel.textColor = .red
             } else {
                 emailTextField.layer.borderColor = UIColor(hexString: "#81A0D3")?.cgColor
+                emailLabel.textColor = UIColor(hexString: "#81A0D3")
             }
         }
         
         if textField == pwTextField {
             if newText.isEmpty || newText.count < 8 {
                 pwTextField.layer.borderColor = UIColor.red.cgColor
+                pwLabel.textColor = .red
             } else {
                 pwTextField.layer.borderColor = UIColor(hexString: "#81A0D3")?.cgColor
+                pwLabel.textColor = UIColor(hexString: "#81A0D3")
             }
         }
         

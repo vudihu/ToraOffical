@@ -18,7 +18,7 @@ class CourseCell: UICollectionViewCell {
     }
     
     func setupUI() {
-        
+        subView.layer.cornerRadius = 35
     }
 
 }

@@ -57,26 +57,28 @@ class OnboardingScreen: UIViewController {
     }
     
     @IBAction private func tapToNext(_ sender: Any) {
-        tapCount += 1
-        if tapCount < titleArr.count || tapCount < descriptionArr.count || tapCount < imagenArr.count {
-            titleLabel.text = titleArr[tapCount]
-            descriptionLabel.text = descriptionArr[tapCount]
-            onboardingImage.image = UIImage(named: imagenArr[tapCount])
-            if tapCount == 1 {
-                dot2View.backgroundColor = .black
-                [dot1View, dot3View].forEach {
-                    $0?.backgroundColor = UIColor(hexString: "#D9D9D9")
-                }
-            } else {
-                dot3View.backgroundColor = .black
-                [dot1View, dot2View].forEach {
-                    $0?.backgroundColor = UIColor(hexString: "#D9D9D9")
-                }
-            }
-        } else {
-            let loginScreen = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginScreen") as! LoginScreen
-                navigationController?.pushViewController(loginScreen, animated: true)
-        }
+//        tapCount += 1
+//        if tapCount < titleArr.count || tapCount < descriptionArr.count || tapCount < imagenArr.count {
+//            titleLabel.text = titleArr[tapCount]
+//            descriptionLabel.text = descriptionArr[tapCount]
+//            onboardingImage.image = UIImage(named: imagenArr[tapCount])
+//            if tapCount == 1 {
+//                dot2View.backgroundColor = .black
+//                [dot1View, dot3View].forEach {
+//                    $0?.backgroundColor = UIColor(hexString: "#D9D9D9")
+//                }
+//            } else {
+//                dot3View.backgroundColor = .black
+//                [dot1View, dot2View].forEach {
+//                    $0?.backgroundColor = UIColor(hexString: "#D9D9D9")
+//                }
+//            }
+//        } else {
+//            let loginScreen = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginScreen") as! LoginScreen
+//                navigationController?.pushViewController(loginScreen, animated: true)
+//        }
+        let test = CourseScreen()
+        navigationController?.pushViewController(test, animated: true)
     }
 }
 

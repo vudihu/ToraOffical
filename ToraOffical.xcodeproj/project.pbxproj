@@ -21,6 +21,11 @@
 		CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */; };
 		CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */; };
 		CB36BFEE2B9C9AFC00E63D38 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */; };
+		CB42397A2BD26B3300601696 /* TableViewCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4239782BD26B3300601696 /* TableViewCourseCell.swift */; };
+		CB42397B2BD26B3300601696 /* TableViewCourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4239792BD26B3300601696 /* TableViewCourseCell.xib */; };
+		CB42397D2BD2A4F200601696 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42397C2BD2A4F200601696 /* VideoViewController.swift */; };
+		CB42397F2BD2A61100601696 /* kawaiLession1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */; };
+		CB4239842BD2AA1100601696 /* lession1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB4239832BD2AA1100601696 /* lession1.pdf */; };
 		CB4B2DD52B94C613008BA1B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2DD42B94C613008BA1B2 /* AppDelegate.swift */; };
 		CB4B2DD72B94C613008BA1B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2DD62B94C613008BA1B2 /* SceneDelegate.swift */; };
 		CB4B2DD92B94C613008BA1B2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2DD82B94C613008BA1B2 /* LoginScreen.swift */; };
@@ -66,6 +71,11 @@
 		CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
 		CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.ttf"; sourceTree = "<group>"; };
 		CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		CB4239782BD26B3300601696 /* TableViewCourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCourseCell.swift; sourceTree = "<group>"; };
+		CB4239792BD26B3300601696 /* TableViewCourseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCourseCell.xib; sourceTree = "<group>"; };
+		CB42397C2BD2A4F200601696 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kawaiLession1.mp4; sourceTree = "<group>"; };
+		CB4239832BD2AA1100601696 /* lession1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lession1.pdf; sourceTree = "<group>"; };
 		CB4B2DD12B94C613008BA1B2 /* ToraOffical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToraOffical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4B2DD42B94C613008BA1B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB4B2DD62B94C613008BA1B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +158,7 @@
 				CB9FD9D32BC93A34008CF4C5 /* CourseScreen.xib */,
 				CBE716F42BCACE8400A516A6 /* VideoScreen.swift */,
 				CBE716F52BCACE8400A516A6 /* VideoScreen.xib */,
+				CB42397C2BD2A4F200601696 /* VideoViewController.swift */,
 				CBE716EF2BCA71B400A516A6 /* Cells */,
 				CB9FD9CD2BC9383B008CF4C5 /* View */,
 			);
@@ -191,6 +202,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		CB4239802BD2A9A400601696 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		CB4239822BD2A9F900601696 /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				CB4239832BD2AA1100601696 /* lession1.pdf */,
+			);
+			path = PDFs;
+			sourceTree = "<group>";
+		};
 		CB4B2DC82B94C613008BA1B2 = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +252,8 @@
 				CB73EFD52BBCC9400007A0EE /* ErrorScreen */,
 				CB36BFE12B9C49F800E63D38 /* Extension */,
 				CBCE2C032B9C1E6100D4E274 /* Font */,
+				CB4239802BD2A9A400601696 /* Videos */,
+				CB4239822BD2A9F900601696 /* PDFs */,
 				CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */,
 				CB4B2DDF2B94C614008BA1B2 /* LaunchScreen.storyboard */,
 				CB4B2DE22B94C614008BA1B2 /* Info.plist */,
@@ -288,6 +317,8 @@
 			children = (
 				CB6CDC562BD0B0A500491B81 /* CourseCell.swift */,
 				CB6CDC572BD0B0A500491B81 /* CourseCell.xib */,
+				CB4239782BD26B3300601696 /* TableViewCourseCell.swift */,
+				CB4239792BD26B3300601696 /* TableViewCourseCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -353,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE27A1B2BC23DE200FCE0EA /* ImageCell.xib in Resources */,
+				CB42397F2BD2A61100601696 /* kawaiLession1.mp4 in Resources */,
 				CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */,
 				CB9FD9D52BC93A34008CF4C5 /* CourseScreen.xib in Resources */,
 				CBE716EE2BC96E7B00A516A6 /* Assets.xcassets in Resources */,
@@ -371,6 +403,8 @@
 				CB2584182BA58FAA00FF6DEC /* BookScreen.xib in Resources */,
 				CB2584242BA5903F00FF6DEC /* HomeScreen.xib in Resources */,
 				CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */,
+				CB4239842BD2AA1100601696 /* lession1.pdf in Resources */,
+				CB42397B2BD26B3300601696 /* TableViewCourseCell.xib in Resources */,
 				CB2584292BA5921500FF6DEC /* ProfileScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +468,7 @@
 				CBE27A082BC11BAC00FCE0EA /* UIViewExtension.swift in Sources */,
 				CB2584282BA5921500FF6DEC /* ProfileScreen.swift in Sources */,
 				CBE716F62BCACE8400A516A6 /* VideoScreen.swift in Sources */,
+				CB42397A2BD26B3300601696 /* TableViewCourseCell.swift in Sources */,
 				CB2584232BA5903F00FF6DEC /* HomeScreen.swift in Sources */,
 				CB4B2DD52B94C613008BA1B2 /* AppDelegate.swift in Sources */,
 				CB2584172BA58FAA00FF6DEC /* BookScreen.swift in Sources */,
@@ -441,6 +476,7 @@
 				CBE27A1A2BC23DE200FCE0EA /* ImageCell.swift in Sources */,
 				CBE716EB2BC9493800A516A6 /* DetailView.swift in Sources */,
 				CB4B2DD72B94C613008BA1B2 /* SceneDelegate.swift in Sources */,
+				CB42397D2BD2A4F200601696 /* VideoViewController.swift in Sources */,
 				CBA53E442BA5ECCA001FA7D8 /* MainTabbarViewController.swift in Sources */,
 				CB73EFCC2BBC47940007A0EE /* ExampleBasicContentView.swift in Sources */,
 				CB73EFCE2BBCC0180007A0EE /* CardView.swift in Sources */,
