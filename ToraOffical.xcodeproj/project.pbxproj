@@ -23,7 +23,6 @@
 		CB36BFEE2B9C9AFC00E63D38 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */; };
 		CB42397A2BD26B3300601696 /* TableViewCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4239782BD26B3300601696 /* TableViewCourseCell.swift */; };
 		CB42397B2BD26B3300601696 /* TableViewCourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4239792BD26B3300601696 /* TableViewCourseCell.xib */; };
-		CB42397D2BD2A4F200601696 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42397C2BD2A4F200601696 /* VideoViewController.swift */; };
 		CB42397F2BD2A61100601696 /* kawaiLession1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */; };
 		CB4239842BD2AA1100601696 /* lession1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB4239832BD2AA1100601696 /* lession1.pdf */; };
 		CB4B2DD52B94C613008BA1B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4B2DD42B94C613008BA1B2 /* AppDelegate.swift */; };
@@ -73,7 +72,6 @@
 		CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		CB4239782BD26B3300601696 /* TableViewCourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCourseCell.swift; sourceTree = "<group>"; };
 		CB4239792BD26B3300601696 /* TableViewCourseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCourseCell.xib; sourceTree = "<group>"; };
-		CB42397C2BD2A4F200601696 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kawaiLession1.mp4; sourceTree = "<group>"; };
 		CB4239832BD2AA1100601696 /* lession1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lession1.pdf; sourceTree = "<group>"; };
 		CB4B2DD12B94C613008BA1B2 /* ToraOffical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToraOffical.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,7 +156,6 @@
 				CB9FD9D32BC93A34008CF4C5 /* CourseScreen.xib */,
 				CBE716F42BCACE8400A516A6 /* VideoScreen.swift */,
 				CBE716F52BCACE8400A516A6 /* VideoScreen.xib */,
-				CB42397C2BD2A4F200601696 /* VideoViewController.swift */,
 				CBE716EF2BCA71B400A516A6 /* Cells */,
 				CB9FD9CD2BC9383B008CF4C5 /* View */,
 			);
@@ -476,7 +473,6 @@
 				CBE27A1A2BC23DE200FCE0EA /* ImageCell.swift in Sources */,
 				CBE716EB2BC9493800A516A6 /* DetailView.swift in Sources */,
 				CB4B2DD72B94C613008BA1B2 /* SceneDelegate.swift in Sources */,
-				CB42397D2BD2A4F200601696 /* VideoViewController.swift in Sources */,
 				CBA53E442BA5ECCA001FA7D8 /* MainTabbarViewController.swift in Sources */,
 				CB73EFCC2BBC47940007A0EE /* ExampleBasicContentView.swift in Sources */,
 				CB73EFCE2BBCC0180007A0EE /* CardView.swift in Sources */,
@@ -631,7 +627,7 @@
 				DEVELOPMENT_TEAM = Z2MKY57W8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToraOffical/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tora Tiếng Nhật";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -662,7 +658,7 @@
 				DEVELOPMENT_TEAM = Z2MKY57W8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToraOffical/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tora Tiếng Nhật";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

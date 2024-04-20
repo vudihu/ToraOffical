@@ -7,6 +7,44 @@
 
 import UIKit
 
+//enum ScreenType {
+//    case n5Course
+//    case n4Course
+//    case n3Course
+//    case n2Course
+//    case n1Course
+//
+//    var title: String {
+//        switch self {
+//        case .n5Course:
+//            return "Khóa học N5"
+//        case .n4Course:
+//            return "Khóa học N4"
+//        case .n3Course:
+//            return "Khóa học N3"
+//        case .n2Course:
+//            return "Khóa học N2"
+//        case .n1Course:
+//            return "Khóa học N1"
+//        }
+//    }
+//
+//    var color: String {
+//        switch self {
+//        case .n5Course:
+//            return "#33A2C5"
+//        case .n4Course:
+//            return "#ECA451"
+//        case .n3Course:
+//            return "#83C579"
+//        case .n2Course:
+//            return "#9F7FD1"
+//        case .n1Course:
+//            return "#5389B9"
+//        }
+//    }
+//}
+
 class CourseScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     enum ScreenType {

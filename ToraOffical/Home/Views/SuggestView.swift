@@ -8,9 +8,17 @@
 import UIKit
 
 protocol SuggestViewDelegate: AnyObject {
-    func tapToViewSuggest(tag: Int)
-    func tapToViewDetail(tag: Int)
+    func tapToViewSuggest(list: ListSuggest)
+    func tapToViewDetail(list: ListSuggest)
 }
+
+enum ListSuggest {
+    case kaiwa
+    case words
+    case grammar
+}
+var suggest: [ListSuggest] = [.kaiwa, .words, .grammar]
+var list: ListSuggest = .kaiwa
 
 class SuggestView: UIView {
     @IBOutlet private weak var bgView: UIView!
@@ -20,7 +28,10 @@ class SuggestView: UIView {
     @IBOutlet private weak var detailView: UIView!
     @IBOutlet private weak var bgImage: UIImageView!
     weak var delegate: SuggestViewDelegate?
-    var tagValue: Int = 0
+    
+    
+    var suggest: [ListSuggest] = [.kaiwa, .words, .grammar]
+    var list: ListSuggest = .kaiwa
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -53,11 +64,11 @@ class SuggestView: UIView {
         bgView.isHidden = true
     }
     @IBAction private func tapToSuggest(_ sender: Any) {
-        delegate?.tapToViewSuggest(tag: tagValue)
+        delegate?.tapToViewSuggest(list: list)
         
     }
     @IBAction private func tapToDetail(_ sender: Any) {
-        delegate?.tapToViewDetail(tag: tagValue)
+        delegate?.tapToViewDetail(list: list)
         
     }
 }

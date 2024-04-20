@@ -77,8 +77,8 @@ class OnboardingScreen: UIViewController {
 //            let loginScreen = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginScreen") as! LoginScreen
 //                navigationController?.pushViewController(loginScreen, animated: true)
 //        }
-        let test = CourseScreen()
-        navigationController?.pushViewController(test, animated: true)
+        let home = MainTabbarViewController()
+        navigationController?.pushViewController(home, animated: false)
     }
 }
 

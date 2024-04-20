@@ -11,16 +11,29 @@ import AVFoundation
 import PDFKit
 
 class VideoScreen: UIViewController {
+    
     @IBOutlet private weak var titleHeader: UILabel!
     @IBOutlet private weak var videoView: UIView!
     @IBOutlet private weak var pdfView: PDFView!
     @IBOutlet private weak var playImage: UIImageView!
+    @IBOutlet private weak var bgView: UIView!
+    @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet private weak var scrollButton: UIButton!
+    @IBOutlet private weak var scrollImage: UIImageView!
     
     private var player: AVPlayer?
     private let pdf = PDFView()
+    var screenType: CourseScreen.ScreenType = .n1Course
+    private var isScroll: Bool = false {
+        didSet {
+            scrollView.isScrollEnabled = isScroll
+            scrollView.contentOffset = CGPoint(x: 0, y: isScroll ? videoView.frame.height + 16 : 0)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         displayVideo()
         displayPDF()
     }
@@ -30,15 +43,23 @@ class VideoScreen: UIViewController {
         pdf.frame = pdfView.bounds
     }
     
+    private func setupUI() {
+        scrollView.isScrollEnabled = false
+        titleHeader.textColor = UIColor(hexString: screenType.color)
+        videoView.layer.shadowColor = UIColor.black.cgColor
+        videoView.layer.shadowOpacity = 0.5
+        videoView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        videoView.layer.shadowRadius = 5
+    }
+    
     private func displayVideo() {
         if let videoURL = Bundle.main.url(forResource: "kawaiLession1", withExtension: "mp4") {
             player = AVPlayer(url: videoURL)
             let playerLayer = AVPlayerLayer(player: player)
             playerLayer.frame = videoView.bounds
-            playerLayer.videoGravity = .resizeAspectFill
+            playerLayer.videoGravity = .resizeAspect
             videoView.layer.addSublayer(playerLayer)
             playImage.isHidden = false
-            videoView.alpha = 0.4
             player?.pause()
             
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapVideo))
@@ -50,11 +71,9 @@ class VideoScreen: UIViewController {
         guard let player = player else { return }
         if player.timeControlStatus == .paused {
             playImage.isHidden = true
-            videoView.alpha = 1
             player.play()
         } else if player.timeControlStatus == .playing {
             playImage.isHidden = false
-            videoView.alpha = 0.4
             player.pause()
         }
     }
@@ -68,6 +87,8 @@ class VideoScreen: UIViewController {
             return
         }
         pdf.document = document
+        pdf.autoScales = true
+        pdf.backgroundColor = .clear
     }
     
 
@@ -77,5 +98,9 @@ class VideoScreen: UIViewController {
         player.pause()
         let courseScreen = CourseScreen()
         navigationController?.pushViewController(courseScreen, animated: false)
+    }
+    
+    @IBAction private func tapToScroll(_ sender: Any) {
+        isScroll.toggle()
     }
 }
