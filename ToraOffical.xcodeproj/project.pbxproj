@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		5ABBCD4BBC6C7CA78E8FF66B /* Pods_ToraOffical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5AD855A8112EF96C73F601 /* Pods_ToraOffical.framework */; };
 		CB2584082BA58A3800FF6DEC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB2584072BA58A3800FF6DEC /* Localizable.strings */; };
-		CB2584122BA58F7700FF6DEC /* LearnScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584102BA58F7700FF6DEC /* LearnScreen.swift */; };
-		CB2584132BA58F7700FF6DEC /* LearnScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584112BA58F7700FF6DEC /* LearnScreen.xib */; };
-		CB2584172BA58FAA00FF6DEC /* BookScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584152BA58FAA00FF6DEC /* BookScreen.swift */; };
-		CB2584182BA58FAA00FF6DEC /* BookScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584162BA58FAA00FF6DEC /* BookScreen.xib */; };
-		CB2584232BA5903F00FF6DEC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584212BA5903F00FF6DEC /* HomeScreen.swift */; };
-		CB2584242BA5903F00FF6DEC /* HomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584222BA5903F00FF6DEC /* HomeScreen.xib */; };
-		CB2584282BA5921500FF6DEC /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584262BA5921500FF6DEC /* ProfileScreen.swift */; };
-		CB2584292BA5921500FF6DEC /* ProfileScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584272BA5921500FF6DEC /* ProfileScreen.xib */; };
+		CB2584122BA58F7700FF6DEC /* LN000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584102BA58F7700FF6DEC /* LN000Screen.swift */; };
+		CB2584132BA58F7700FF6DEC /* LN000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584112BA58F7700FF6DEC /* LN000Screen.xib */; };
+		CB2584172BA58FAA00FF6DEC /* BK000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584152BA58FAA00FF6DEC /* BK000Screen.swift */; };
+		CB2584182BA58FAA00FF6DEC /* BK000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584162BA58FAA00FF6DEC /* BK000Screen.xib */; };
+		CB2584232BA5903F00FF6DEC /* HM000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584212BA5903F00FF6DEC /* HM000Screen.swift */; };
+		CB2584242BA5903F00FF6DEC /* HM000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584222BA5903F00FF6DEC /* HM000Screen.xib */; };
+		CB2584282BA5921500FF6DEC /* PR000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584262BA5921500FF6DEC /* PR000Screen.swift */; };
+		CB2584292BA5921500FF6DEC /* PR000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584272BA5921500FF6DEC /* PR000Screen.xib */; };
 		CB36BFEA2B9C567500E63D38 /* SF-Pro-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE72B9C567400E63D38 /* SF-Pro-Rounded-Regular.ttf */; };
 		CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */; };
 		CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */; };
@@ -35,11 +35,11 @@
 		CB73EFCC2BBC47940007A0EE /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFCB2BBC47940007A0EE /* ExampleBasicContentView.swift */; };
 		CB73EFCE2BBCC0180007A0EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFCD2BBCC0180007A0EE /* CardView.swift */; };
 		CB73EFD02BBCC03A0007A0EE /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB73EFCF2BBCC03A0007A0EE /* CardView.xib */; };
-		CB73EFD32BBCC9310007A0EE /* ErrorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFD12BBCC9310007A0EE /* ErrorScreen.swift */; };
-		CB73EFD42BBCC9310007A0EE /* ErrorScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB73EFD22BBCC9310007A0EE /* ErrorScreen.xib */; };
+		CB73EFD32BBCC9310007A0EE /* ER000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFD12BBCC9310007A0EE /* ER000Screen.swift */; };
+		CB73EFD42BBCC9310007A0EE /* ER000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB73EFD22BBCC9310007A0EE /* ER000Screen.xib */; };
 		CB955CB12BBB6C1F00587035 /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB955CB02BBB6C1F00587035 /* ExampleBouncesContentView.swift */; };
-		CB9FD9D42BC93A34008CF4C5 /* CourseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FD9D22BC93A34008CF4C5 /* CourseScreen.swift */; };
-		CB9FD9D52BC93A34008CF4C5 /* CourseScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9FD9D32BC93A34008CF4C5 /* CourseScreen.xib */; };
+		CB9FD9D42BC93A34008CF4C5 /* LN001Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FD9D22BC93A34008CF4C5 /* LN001Screen.swift */; };
+		CB9FD9D52BC93A34008CF4C5 /* LN001Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9FD9D32BC93A34008CF4C5 /* LN001Screen.xib */; };
 		CBA53E442BA5ECCA001FA7D8 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */; };
 		CBE27A082BC11BAC00FCE0EA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE27A072BC11BAC00FCE0EA /* UIViewExtension.swift */; };
 		CBE27A0A2BC194C300FCE0EA /* SuggestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE27A092BC194C300FCE0EA /* SuggestView.swift */; };
@@ -51,21 +51,21 @@
 		CBE716EB2BC9493800A516A6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE716EA2BC9493800A516A6 /* DetailView.swift */; };
 		CBE716ED2BC9494400A516A6 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE716EC2BC9494400A516A6 /* DetailView.xib */; };
 		CBE716EE2BC96E7B00A516A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */; };
-		CBE716F62BCACE8400A516A6 /* VideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE716F42BCACE8400A516A6 /* VideoScreen.swift */; };
-		CBE716F72BCACE8400A516A6 /* VideoScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE716F52BCACE8400A516A6 /* VideoScreen.xib */; };
+		CBE716F62BCACE8400A516A6 /* LN002Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE716F42BCACE8400A516A6 /* LN002Screen.swift */; };
+		CBE716F72BCACE8400A516A6 /* LN002Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE716F52BCACE8400A516A6 /* LN002Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A5AD855A8112EF96C73F601 /* Pods_ToraOffical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToraOffical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2584072BA58A3800FF6DEC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		CB2584102BA58F7700FF6DEC /* LearnScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnScreen.swift; sourceTree = "<group>"; };
-		CB2584112BA58F7700FF6DEC /* LearnScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearnScreen.xib; sourceTree = "<group>"; };
-		CB2584152BA58FAA00FF6DEC /* BookScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookScreen.swift; sourceTree = "<group>"; };
-		CB2584162BA58FAA00FF6DEC /* BookScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookScreen.xib; sourceTree = "<group>"; };
-		CB2584212BA5903F00FF6DEC /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		CB2584222BA5903F00FF6DEC /* HomeScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreen.xib; sourceTree = "<group>"; };
-		CB2584262BA5921500FF6DEC /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
-		CB2584272BA5921500FF6DEC /* ProfileScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileScreen.xib; sourceTree = "<group>"; };
+		CB2584102BA58F7700FF6DEC /* LN000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN000Screen.swift; sourceTree = "<group>"; };
+		CB2584112BA58F7700FF6DEC /* LN000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LN000Screen.xib; sourceTree = "<group>"; };
+		CB2584152BA58FAA00FF6DEC /* BK000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BK000Screen.swift; sourceTree = "<group>"; };
+		CB2584162BA58FAA00FF6DEC /* BK000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BK000Screen.xib; sourceTree = "<group>"; };
+		CB2584212BA5903F00FF6DEC /* HM000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HM000Screen.swift; sourceTree = "<group>"; };
+		CB2584222BA5903F00FF6DEC /* HM000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HM000Screen.xib; sourceTree = "<group>"; };
+		CB2584262BA5921500FF6DEC /* PR000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PR000Screen.swift; sourceTree = "<group>"; };
+		CB2584272BA5921500FF6DEC /* PR000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PR000Screen.xib; sourceTree = "<group>"; };
 		CB36BFE72B9C567400E63D38 /* SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
 		CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
 		CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.ttf"; sourceTree = "<group>"; };
@@ -87,11 +87,11 @@
 		CB73EFCB2BBC47940007A0EE /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
 		CB73EFCD2BBCC0180007A0EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CB73EFCF2BBCC03A0007A0EE /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
-		CB73EFD12BBCC9310007A0EE /* ErrorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorScreen.swift; sourceTree = "<group>"; };
-		CB73EFD22BBCC9310007A0EE /* ErrorScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorScreen.xib; sourceTree = "<group>"; };
+		CB73EFD12BBCC9310007A0EE /* ER000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ER000Screen.swift; sourceTree = "<group>"; };
+		CB73EFD22BBCC9310007A0EE /* ER000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ER000Screen.xib; sourceTree = "<group>"; };
 		CB955CB02BBB6C1F00587035 /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBouncesContentView.swift; sourceTree = "<group>"; };
-		CB9FD9D22BC93A34008CF4C5 /* CourseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScreen.swift; sourceTree = "<group>"; };
-		CB9FD9D32BC93A34008CF4C5 /* CourseScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseScreen.xib; sourceTree = "<group>"; };
+		CB9FD9D22BC93A34008CF4C5 /* LN001Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN001Screen.swift; sourceTree = "<group>"; };
+		CB9FD9D32BC93A34008CF4C5 /* LN001Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LN001Screen.xib; sourceTree = "<group>"; };
 		CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		CBE27A072BC11BAC00FCE0EA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = ToraOffical/UIViewExtension.swift; sourceTree = SOURCE_ROOT; };
 		CBE27A092BC194C300FCE0EA /* SuggestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestView.swift; sourceTree = "<group>"; };
@@ -102,8 +102,8 @@
 		CBE27A192BC23DE200FCE0EA /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		CBE716EA2BC9493800A516A6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CBE716EC2BC9494400A516A6 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
-		CBE716F42BCACE8400A516A6 /* VideoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreen.swift; sourceTree = "<group>"; };
-		CBE716F52BCACE8400A516A6 /* VideoScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoScreen.xib; sourceTree = "<group>"; };
+		CBE716F42BCACE8400A516A6 /* LN002Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN002Screen.swift; sourceTree = "<group>"; };
+		CBE716F52BCACE8400A516A6 /* LN002Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LN002Screen.xib; sourceTree = "<group>"; };
 		F4AB2409855F840BF015EB48 /* Pods-ToraOffical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToraOffical.debug.xcconfig"; path = "Target Support Files/Pods-ToraOffical/Pods-ToraOffical.debug.xcconfig"; sourceTree = "<group>"; };
 		FF4623BCD847D172B4296676 /* Pods-ToraOffical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToraOffical.release.xcconfig"; path = "Target Support Files/Pods-ToraOffical/Pods-ToraOffical.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,48 +147,48 @@
 			path = TabbarController;
 			sourceTree = "<group>";
 		};
-		CB25840F2BA58F5400FF6DEC /* Learn */ = {
+		CB25840F2BA58F5400FF6DEC /* Learn Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CB2584102BA58F7700FF6DEC /* LearnScreen.swift */,
-				CB2584112BA58F7700FF6DEC /* LearnScreen.xib */,
-				CB9FD9D22BC93A34008CF4C5 /* CourseScreen.swift */,
-				CB9FD9D32BC93A34008CF4C5 /* CourseScreen.xib */,
-				CBE716F42BCACE8400A516A6 /* VideoScreen.swift */,
-				CBE716F52BCACE8400A516A6 /* VideoScreen.xib */,
+				CB2584102BA58F7700FF6DEC /* LN000Screen.swift */,
+				CB2584112BA58F7700FF6DEC /* LN000Screen.xib */,
+				CB9FD9D22BC93A34008CF4C5 /* LN001Screen.swift */,
+				CB9FD9D32BC93A34008CF4C5 /* LN001Screen.xib */,
+				CBE716F42BCACE8400A516A6 /* LN002Screen.swift */,
+				CBE716F52BCACE8400A516A6 /* LN002Screen.xib */,
 				CBE716EF2BCA71B400A516A6 /* Cells */,
 				CB9FD9CD2BC9383B008CF4C5 /* View */,
 			);
-			path = Learn;
+			path = "Learn Screen";
 			sourceTree = "<group>";
 		};
-		CB2584142BA58F7E00FF6DEC /* Book */ = {
+		CB2584142BA58F7E00FF6DEC /* Book Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CB2584152BA58FAA00FF6DEC /* BookScreen.swift */,
-				CB2584162BA58FAA00FF6DEC /* BookScreen.xib */,
+				CB2584152BA58FAA00FF6DEC /* BK000Screen.swift */,
+				CB2584162BA58FAA00FF6DEC /* BK000Screen.xib */,
 			);
-			path = Book;
+			path = "Book Screen";
 			sourceTree = "<group>";
 		};
-		CB2584202BA5902200FF6DEC /* Home */ = {
+		CB2584202BA5902200FF6DEC /* Home Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CB2584212BA5903F00FF6DEC /* HomeScreen.swift */,
-				CB2584222BA5903F00FF6DEC /* HomeScreen.xib */,
+				CB2584212BA5903F00FF6DEC /* HM000Screen.swift */,
+				CB2584222BA5903F00FF6DEC /* HM000Screen.xib */,
 				CBE27A132BC23D8D00FCE0EA /* Views */,
 				CBE27A112BC23D7800FCE0EA /* Cells */,
 			);
-			path = Home;
+			path = "Home Screen";
 			sourceTree = "<group>";
 		};
-		CB2584252BA591F800FF6DEC /* Profile */ = {
+		CB2584252BA591F800FF6DEC /* Profile Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CB2584262BA5921500FF6DEC /* ProfileScreen.swift */,
-				CB2584272BA5921500FF6DEC /* ProfileScreen.xib */,
+				CB2584262BA5921500FF6DEC /* PR000Screen.swift */,
+				CB2584272BA5921500FF6DEC /* PR000Screen.xib */,
 			);
-			path = Profile;
+			path = "Profile Screen";
 			sourceTree = "<group>";
 		};
 		CB36BFE12B9C49F800E63D38 /* Extension */ = {
@@ -242,11 +242,11 @@
 				CB4B2DD82B94C613008BA1B2 /* LoginScreen.swift */,
 				CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */,
 				CB2584092BA58EB900FF6DEC /* TabbarController */,
-				CB2584202BA5902200FF6DEC /* Home */,
-				CB25840F2BA58F5400FF6DEC /* Learn */,
-				CB2584142BA58F7E00FF6DEC /* Book */,
-				CB2584252BA591F800FF6DEC /* Profile */,
-				CB73EFD52BBCC9400007A0EE /* ErrorScreen */,
+				CB2584202BA5902200FF6DEC /* Home Screen */,
+				CB25840F2BA58F5400FF6DEC /* Learn Screen */,
+				CB2584142BA58F7E00FF6DEC /* Book Screen */,
+				CB2584252BA591F800FF6DEC /* Profile Screen */,
+				CB73EFD52BBCC9400007A0EE /* Error Screen */,
 				CB36BFE12B9C49F800E63D38 /* Extension */,
 				CBCE2C032B9C1E6100D4E274 /* Font */,
 				CB4239802BD2A9A400601696 /* Videos */,
@@ -259,13 +259,13 @@
 			path = ToraOffical;
 			sourceTree = "<group>";
 		};
-		CB73EFD52BBCC9400007A0EE /* ErrorScreen */ = {
+		CB73EFD52BBCC9400007A0EE /* Error Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CB73EFD12BBCC9310007A0EE /* ErrorScreen.swift */,
-				CB73EFD22BBCC9310007A0EE /* ErrorScreen.xib */,
+				CB73EFD12BBCC9310007A0EE /* ER000Screen.swift */,
+				CB73EFD22BBCC9310007A0EE /* ER000Screen.xib */,
 			);
-			path = ErrorScreen;
+			path = "Error Screen";
 			sourceTree = "<group>";
 		};
 		CB9FD9CD2BC9383B008CF4C5 /* View */ = {
@@ -383,26 +383,26 @@
 				CBE27A1B2BC23DE200FCE0EA /* ImageCell.xib in Resources */,
 				CB42397F2BD2A61100601696 /* kawaiLession1.mp4 in Resources */,
 				CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */,
-				CB9FD9D52BC93A34008CF4C5 /* CourseScreen.xib in Resources */,
+				CB9FD9D52BC93A34008CF4C5 /* LN001Screen.xib in Resources */,
 				CBE716EE2BC96E7B00A516A6 /* Assets.xcassets in Resources */,
 				CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */,
 				CBE716ED2BC9494400A516A6 /* DetailView.xib in Resources */,
 				CBE27A172BC23DCE00FCE0EA /* SuggestCell.xib in Resources */,
 				CB73EFD02BBCC03A0007A0EE /* CardView.xib in Resources */,
 				CB6CDC592BD0B0A500491B81 /* CourseCell.xib in Resources */,
-				CB73EFD42BBCC9310007A0EE /* ErrorScreen.xib in Resources */,
+				CB73EFD42BBCC9310007A0EE /* ER000Screen.xib in Resources */,
 				CB2584082BA58A3800FF6DEC /* Localizable.strings in Resources */,
 				CB36BFEA2B9C567500E63D38 /* SF-Pro-Rounded-Regular.ttf in Resources */,
 				CBE27A0C2BC194D700FCE0EA /* SuggestView.xib in Resources */,
-				CB2584132BA58F7700FF6DEC /* LearnScreen.xib in Resources */,
+				CB2584132BA58F7700FF6DEC /* LN000Screen.xib in Resources */,
 				CB4B2DDC2B94C613008BA1B2 /* Main.storyboard in Resources */,
-				CBE716F72BCACE8400A516A6 /* VideoScreen.xib in Resources */,
-				CB2584182BA58FAA00FF6DEC /* BookScreen.xib in Resources */,
-				CB2584242BA5903F00FF6DEC /* HomeScreen.xib in Resources */,
+				CBE716F72BCACE8400A516A6 /* LN002Screen.xib in Resources */,
+				CB2584182BA58FAA00FF6DEC /* BK000Screen.xib in Resources */,
+				CB2584242BA5903F00FF6DEC /* HM000Screen.xib in Resources */,
 				CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */,
 				CB4239842BD2AA1100601696 /* lession1.pdf in Resources */,
 				CB42397B2BD26B3300601696 /* TableViewCourseCell.xib in Resources */,
-				CB2584292BA5921500FF6DEC /* ProfileScreen.xib in Resources */,
+				CB2584292BA5921500FF6DEC /* PR000Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,17 +459,17 @@
 				CB4B2DD92B94C613008BA1B2 /* LoginScreen.swift in Sources */,
 				CBE27A0A2BC194C300FCE0EA /* SuggestView.swift in Sources */,
 				CB6CDC582BD0B0A500491B81 /* CourseCell.swift in Sources */,
-				CB73EFD32BBCC9310007A0EE /* ErrorScreen.swift in Sources */,
+				CB73EFD32BBCC9310007A0EE /* ER000Screen.swift in Sources */,
 				CBE27A162BC23DCE00FCE0EA /* SuggestCell.swift in Sources */,
-				CB2584122BA58F7700FF6DEC /* LearnScreen.swift in Sources */,
+				CB2584122BA58F7700FF6DEC /* LN000Screen.swift in Sources */,
 				CBE27A082BC11BAC00FCE0EA /* UIViewExtension.swift in Sources */,
-				CB2584282BA5921500FF6DEC /* ProfileScreen.swift in Sources */,
-				CBE716F62BCACE8400A516A6 /* VideoScreen.swift in Sources */,
+				CB2584282BA5921500FF6DEC /* PR000Screen.swift in Sources */,
+				CBE716F62BCACE8400A516A6 /* LN002Screen.swift in Sources */,
 				CB42397A2BD26B3300601696 /* TableViewCourseCell.swift in Sources */,
-				CB2584232BA5903F00FF6DEC /* HomeScreen.swift in Sources */,
+				CB2584232BA5903F00FF6DEC /* HM000Screen.swift in Sources */,
 				CB4B2DD52B94C613008BA1B2 /* AppDelegate.swift in Sources */,
-				CB2584172BA58FAA00FF6DEC /* BookScreen.swift in Sources */,
-				CB9FD9D42BC93A34008CF4C5 /* CourseScreen.swift in Sources */,
+				CB2584172BA58FAA00FF6DEC /* BK000Screen.swift in Sources */,
+				CB9FD9D42BC93A34008CF4C5 /* LN001Screen.swift in Sources */,
 				CBE27A1A2BC23DE200FCE0EA /* ImageCell.swift in Sources */,
 				CBE716EB2BC9493800A516A6 /* DetailView.swift in Sources */,
 				CB4B2DD72B94C613008BA1B2 /* SceneDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  HomeScreen.swift
+//  HM000Screen.swift
 //  ToraOffical
 //
 //  Created by Hung Vu on 16/03/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeScreen: UIViewController {
+class HM000Screen: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var headerView: UIView!
@@ -34,7 +34,7 @@ class HomeScreen: UIViewController {
     }
 }
 
-extension HomeScreen: UITableViewDelegate, UITableViewDataSource {
+extension HM000Screen: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listCell.count
     }
@@ -61,7 +61,7 @@ extension HomeScreen: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension HomeScreen: ImageCellDelegate {
+extension HM000Screen: ImageCellDelegate {
     func actionTap() {
         guard let url = URL(string: "https://www.youtube.com/@trungtamtiengnhattora/videos") else {
             return

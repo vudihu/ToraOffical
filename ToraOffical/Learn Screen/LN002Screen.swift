@@ -1,5 +1,5 @@
 //
-//  VideoScreen.swift
+//  LN002Screen.swift
 //  ToraOffical
 //
 //  Created by Hung Vu on 13/04/2024.
@@ -10,7 +10,7 @@ import AVKit
 import AVFoundation
 import PDFKit
 
-class VideoScreen: UIViewController {
+class LN002Screen: UIViewController {
     
     @IBOutlet private weak var titleHeader: UILabel!
     @IBOutlet private weak var videoView: UIView!
@@ -23,7 +23,7 @@ class VideoScreen: UIViewController {
     
     private var player: AVPlayer?
     private let pdf = PDFView()
-    var screenType: CourseScreen.ScreenType = .n1Course
+    var screenType: LN001Screen.ScreenType = .n1Course
     private var isScroll: Bool = false {
         didSet {
             scrollView.isScrollEnabled = isScroll
@@ -96,7 +96,7 @@ class VideoScreen: UIViewController {
     @IBAction private func tapToBack(_ sender: Any) {
         guard let player = player else { return }
         player.pause()
-        let courseScreen = CourseScreen()
+        let courseScreen = LN002Screen()
         navigationController?.pushViewController(courseScreen, animated: false)
     }
     

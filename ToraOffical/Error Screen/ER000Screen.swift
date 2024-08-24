@@ -1,5 +1,5 @@
 //
-//  ErrorScreen.swift
+//  ER000Screen.swift
 //  ToraOffical
 //
 //  Created by Hung Vu on 03/04/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ErrorScreen: UIViewController {
+class ER000Screen: UIViewController {
     @IBOutlet private weak var bgView: UIView!
     @IBOutlet private weak var imageView: UIView!
     

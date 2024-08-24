@@ -1,5 +1,5 @@
 //
-//  BookScreen.swift
+//  BK000Screen.swift
 //  ToraOffical
 //
 //  Created by Hung Vu on 16/03/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BookScreen: UIViewController {
+class BK000Screen: UIViewController {
 
     @IBOutlet private weak var headerView: UIView!
     @IBOutlet private weak var descriptionLabel: UILabel!

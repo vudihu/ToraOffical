@@ -122,7 +122,7 @@ class LoginScreen: UIViewController {
         case showHidePassword:
             isShowPassword.toggle()
         case forgotPWButton, loginWithFBButton, loginWithGGButton:
-            let errorScreen = ErrorScreen()
+            let errorScreen = ER000Screen()
             errorScreen.modalPresentationStyle = .overFullScreen
             present(errorScreen, animated: false, completion: nil)
         case loginButton:

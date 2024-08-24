@@ -1,5 +1,5 @@
 //
-//  ProfileScreen.swift
+//  PR000Screen.swift
 //  ToraOffical
 //
 //  Created by Hung Vu on 16/03/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileScreen: UIViewController {
+class PR000Screen: UIViewController {
     @IBOutlet private weak var bgView: UIView!
     @IBOutlet private weak var imageView: UIView!
     

@@ -1,5 +1,5 @@
 //
-//  LearnScreen.swift
+//  LN000Screen.swift
 //  ToraOffical
 //
 //  Created by Hung Vu on 16/03/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LearnScreen: UIViewController {
+class LN000Screen: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var headerView: UIView!
     
@@ -48,9 +48,9 @@ class LearnScreen: UIViewController {
     }
 }
 
-extension LearnScreen: CardViewDelegate {
+extension LN000Screen: CardViewDelegate {
     func tapCardView(cardType: CardType) {
-        var screenType: CourseScreen.ScreenType
+        var screenType: LN001Screen.ScreenType
         switch cardType {
         case .n5Card:
             screenType = .n5Course
@@ -63,7 +63,7 @@ extension LearnScreen: CardViewDelegate {
         case .n1Card:
             screenType = .n1Course
         }
-        let courseScreen = CourseScreen()
+        let courseScreen = LN001Screen()
         courseScreen.screenType = screenType
         navigationController?.pushViewController(courseScreen, animated: true)
     }

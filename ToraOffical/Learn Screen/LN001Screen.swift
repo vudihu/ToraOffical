@@ -1,5 +1,5 @@
 //
-//  CourseScreen.swift
+//  LN001Screen.swift
 //  ToraOffical
 //
 //  Created by Hung Vu on 12/04/2024.
@@ -45,7 +45,7 @@ import UIKit
 //    }
 //}
 
-class CourseScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LN001Screen: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     enum ScreenType {
         case n5Course
@@ -188,7 +188,7 @@ class CourseScreen: UIViewController, UITableViewDelegate, UITableViewDataSource
     @IBAction func tapToBack(_ sender: Any) {
         if let tabbar = navigationController?.viewControllers.first(where: { $0 is MainTabbarViewController }) as? MainTabbarViewController {
             // Đặt selectedViewController của tabbar thành LearnScreen
-            if let learnScreen = tabbar.viewControllers?.first(where: { $0 is LearnScreen }) {
+            if let learnScreen = tabbar.viewControllers?.first(where: { $0 is LN000Screen }) {
                 tabbar.selectedViewController = learnScreen
             }
             // Pop về MainTabbarViewController từ navigation stack
@@ -197,9 +197,9 @@ class CourseScreen: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
 }
 
-extension CourseScreen: TableViewCourseCellDelegate {
+extension LN001Screen: TableViewCourseCellDelegate {
     func tapAction() {
-        let videoScreen = VideoScreen()
+        let videoScreen = LN002Screen()
         navigationController?.pushViewController(videoScreen, animated: true)
     }
 }
