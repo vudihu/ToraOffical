@@ -137,17 +137,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CB2584092BA58EB900FF6DEC /* TabbarController */ = {
+		CB2584092BA58EB900FF6DEC /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
 				CBA53E432BA5ECCA001FA7D8 /* MainTabbarViewController.swift */,
 				CB955CB02BBB6C1F00587035 /* ExampleBouncesContentView.swift */,
 				CB73EFCB2BBC47940007A0EE /* ExampleBasicContentView.swift */,
 			);
-			path = TabbarController;
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
-		CB25840F2BA58F5400FF6DEC /* Learn Screen */ = {
+		CB25840F2BA58F5400FF6DEC /* LN Screen */ = {
 			isa = PBXGroup;
 			children = (
 				CB2584102BA58F7700FF6DEC /* LN000Screen.swift */,
@@ -159,19 +159,19 @@
 				CBE716EF2BCA71B400A516A6 /* Cells */,
 				CB9FD9CD2BC9383B008CF4C5 /* View */,
 			);
-			path = "Learn Screen";
+			path = "LN Screen";
 			sourceTree = "<group>";
 		};
-		CB2584142BA58F7E00FF6DEC /* Book Screen */ = {
+		CB2584142BA58F7E00FF6DEC /* BK Screen */ = {
 			isa = PBXGroup;
 			children = (
 				CB2584152BA58FAA00FF6DEC /* BK000Screen.swift */,
 				CB2584162BA58FAA00FF6DEC /* BK000Screen.xib */,
 			);
-			path = "Book Screen";
+			path = "BK Screen";
 			sourceTree = "<group>";
 		};
-		CB2584202BA5902200FF6DEC /* Home Screen */ = {
+		CB2584202BA5902200FF6DEC /* HM Screen */ = {
 			isa = PBXGroup;
 			children = (
 				CB2584212BA5903F00FF6DEC /* HM000Screen.swift */,
@@ -179,16 +179,16 @@
 				CBE27A132BC23D8D00FCE0EA /* Views */,
 				CBE27A112BC23D7800FCE0EA /* Cells */,
 			);
-			path = "Home Screen";
+			path = "HM Screen";
 			sourceTree = "<group>";
 		};
-		CB2584252BA591F800FF6DEC /* Profile Screen */ = {
+		CB2584252BA591F800FF6DEC /* PR Screen */ = {
 			isa = PBXGroup;
 			children = (
 				CB2584262BA5921500FF6DEC /* PR000Screen.swift */,
 				CB2584272BA5921500FF6DEC /* PR000Screen.xib */,
 			);
-			path = "Profile Screen";
+			path = "PR Screen";
 			sourceTree = "<group>";
 		};
 		CB36BFE12B9C49F800E63D38 /* Extension */ = {
@@ -241,12 +241,12 @@
 				CB4B2DD62B94C613008BA1B2 /* SceneDelegate.swift */,
 				CB4B2DD82B94C613008BA1B2 /* LoginScreen.swift */,
 				CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */,
-				CB2584092BA58EB900FF6DEC /* TabbarController */,
-				CB2584202BA5902200FF6DEC /* Home Screen */,
-				CB25840F2BA58F5400FF6DEC /* Learn Screen */,
-				CB2584142BA58F7E00FF6DEC /* Book Screen */,
-				CB2584252BA591F800FF6DEC /* Profile Screen */,
-				CB73EFD52BBCC9400007A0EE /* Error Screen */,
+				CB2584092BA58EB900FF6DEC /* Tabbar */,
+				CB2584202BA5902200FF6DEC /* HM Screen */,
+				CB25840F2BA58F5400FF6DEC /* LN Screen */,
+				CB2584142BA58F7E00FF6DEC /* BK Screen */,
+				CB2584252BA591F800FF6DEC /* PR Screen */,
+				CB73EFD52BBCC9400007A0EE /* ER Screen */,
 				CB36BFE12B9C49F800E63D38 /* Extension */,
 				CBCE2C032B9C1E6100D4E274 /* Font */,
 				CB4239802BD2A9A400601696 /* Videos */,
@@ -259,13 +259,13 @@
 			path = ToraOffical;
 			sourceTree = "<group>";
 		};
-		CB73EFD52BBCC9400007A0EE /* Error Screen */ = {
+		CB73EFD52BBCC9400007A0EE /* ER Screen */ = {
 			isa = PBXGroup;
 			children = (
 				CB73EFD12BBCC9310007A0EE /* ER000Screen.swift */,
 				CB73EFD22BBCC9310007A0EE /* ER000Screen.xib */,
 			);
-			path = "Error Screen";
+			path = "ER Screen";
 			sourceTree = "<group>";
 		};
 		CB9FD9CD2BC9383B008CF4C5 /* View */ = {
