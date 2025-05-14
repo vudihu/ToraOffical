@@ -71,7 +71,7 @@ class LoginScreen: UIViewController {
         let isValidEmail = isValidEmail(emailTextField.text ?? "")
         let isValidPW = pwTextField.text?.count ?? 0 >= 8
         if isValidEmail && isValidPW {
-            let home = MainTabbarViewController()
+            let home = MainTabBarViewController()
             navigationController?.pushViewController(home, animated: false)
         } else {
             let alertVC = UIAlertController(title: "Xảy ra lỗi", message: "Kiểm tra Email hoặc Password", preferredStyle: .alert)

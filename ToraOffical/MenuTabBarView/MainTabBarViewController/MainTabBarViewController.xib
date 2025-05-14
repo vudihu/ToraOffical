@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainTabBarViewController" customModule="ToraOffical" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="Ncd-Pa-WJk" id="HA7-3J-88G"/>
+                <outlet property="containerView" destination="Ebg-q2-Z6D" id="1YV-uo-FBr"/>
+                <outlet property="menuTabBarView" destination="Pqb-LR-yKJ" id="4kq-c6-rBR"/>
+                <outlet property="tabbarBackgroundView" destination="bbi-fe-YNx" id="9pM-WK-8N8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebg-q2-Z6D">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-fe-YNx" customClass="TabbarBackgroundView" customModule="ToraOffical" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="746" width="393" height="72"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="zMS-hb-pmy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pqb-LR-yKJ" customClass="MenuTabBarView" customModule="ToraOffical" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="756" width="393" height="62"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="j97-ep-TKA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncd-Pa-WJk">
+                    <rect key="frame" x="0.0" y="818" width="393" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bbi-fe-YNx" secondAttribute="bottom" id="2Ns-jV-GdT"/>
+                <constraint firstItem="Ebg-q2-Z6D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5TK-J4-cyy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bbi-fe-YNx" secondAttribute="trailing" id="ChI-Wa-mAu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ebg-q2-Z6D" secondAttribute="trailing" id="KE0-ND-5nS"/>
+                <constraint firstItem="Pqb-LR-yKJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="S75-IX-PJN"/>
+                <constraint firstItem="bbi-fe-YNx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Uhv-1h-Mw5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ncd-Pa-WJk" secondAttribute="trailing" id="Wqj-2R-Jmf"/>
+                <constraint firstItem="Pqb-LR-yKJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XO1-5m-aM3"/>
+                <constraint firstItem="Ncd-Pa-WJk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cGS-fj-FJ8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ncd-Pa-WJk" secondAttribute="bottom" constant="-40" id="ewH-Ty-b7h"/>
+                <constraint firstItem="Ncd-Pa-WJk" firstAttribute="top" secondItem="bbi-fe-YNx" secondAttribute="bottom" id="goO-ZB-GLO"/>
+                <constraint firstItem="Pqb-LR-yKJ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="nyi-6h-joc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ebg-q2-Z6D" secondAttribute="bottom" id="vyr-Ql-MSQ"/>
+                <constraint firstItem="Ebg-q2-Z6D" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zpZ-f2-bQd"/>
+            </constraints>
+            <point key="canvasLocation" x="98" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

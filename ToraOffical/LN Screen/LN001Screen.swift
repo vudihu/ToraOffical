@@ -183,16 +183,13 @@ class LN001Screen: UIViewController, UITableViewDelegate, UITableViewDataSource 
             titleLabel.textColor = UIColor(hexString: screenType.color)
         }
     }
+    
+    
 
     
     @IBAction func tapToBack(_ sender: Any) {
-        if let tabbar = navigationController?.viewControllers.first(where: { $0 is MainTabbarViewController }) as? MainTabbarViewController {
-            // Đặt selectedViewController của tabbar thành LearnScreen
-            if let learnScreen = tabbar.viewControllers?.first(where: { $0 is LN000Screen }) {
-                tabbar.selectedViewController = learnScreen
-            }
-            // Pop về MainTabbarViewController từ navigation stack
-            navigationController?.popToViewController(tabbar, animated: false)
+        if let tabbarContainer = navigationController?.viewControllers.first(where: { $0 is MainTabBarViewController }) as? MainTabBarViewController {
+            navigationController?.popToViewController(tabbarContainer, animated: false)
         }
     }
 }
