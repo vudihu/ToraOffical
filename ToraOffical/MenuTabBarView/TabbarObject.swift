@@ -41,20 +41,21 @@ enum TabbarObject: Int {
     }
     
     var activeFont: UIFont {
-        return UIFont.systemFont(ofSize: 11)
+        return UIFont.boldSystemFont(ofSize: 11)
     }
     
     // MARK: - inactive state
     var inactiveImage: UIImage {
         switch self {
         case .home:
-            return #imageLiteral(resourceName: "home")
+            return #imageLiteral(resourceName: "home").withRenderingMode(.alwaysTemplate)
         case .learn:
-            return #imageLiteral(resourceName: "learn")
+            return #imageLiteral(resourceName: "learn").withRenderingMode(.alwaysTemplate)
         case .book:
-            return #imageLiteral(resourceName: "book")
+            return #imageLiteral(resourceName: "book").withRenderingMode(.alwaysTemplate)
         }
     }
+
     
     var kernvalue: CGFloat {
         switch self {
@@ -72,7 +73,7 @@ enum TabbarObject: Int {
     }
     
     var inactiveFont: UIFont {
-        return UIFont.systemFont(ofSize: 11)
+        return UIFont.boldSystemFont(ofSize: 11)
     }
     
     static func getTabbarColor() -> UIColor {

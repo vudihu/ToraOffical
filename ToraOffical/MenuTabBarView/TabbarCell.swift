@@ -49,6 +49,7 @@ extension TabbarCell {
             nameLabel.attributedText = titleFor(type: type, and: state)
             bottomSpace.constant = 18
         } else {
+            iconImageView.tintColor = .white
             iconImageView.image = type.inactiveImage
             nameLabel.attributedText = titleFor(type: type, and: state)
             bottomSpace.constant = 8
