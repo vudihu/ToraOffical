@@ -30,5 +30,13 @@ class BK000Screen: UIViewController {
     }
 
     @IBAction private func tapToBuy(_ sender: Any) {
+        if let url = URL(string: "https://m.me/yourPageUsername") {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+
     }
 }

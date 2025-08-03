@@ -23,6 +23,10 @@ target 'ToraOffical' do
   pod 'KeychainSwift', '~> 20.0'
   
   pod 'Kingfisher', '~> 7.0'
+  
+  pod 'Kingfisher'
+  
+  pod 'SDWebImage'
 
 end
 post_install do |installer|
