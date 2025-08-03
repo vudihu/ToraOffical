@@ -19,6 +19,9 @@ PODS:
   - Kingfisher (7.10.1)
   - MBProgressHUD (1.2.0)
   - ObjectMapper (3.5.3)
+  - SDWebImage (5.21.0):
+    - SDWebImage/Core (= 5.21.0)
+  - SDWebImage/Core (5.21.0)
   - SwiftHEXColors (1.4.1)
   - XLPagerTabStrip (9.1.0)
 
@@ -27,9 +30,11 @@ DEPENDENCIES:
   - ESTabBarController-swift
   - GoogleSignIn
   - KeychainSwift (~> 20.0)
+  - Kingfisher
   - Kingfisher (~> 7.0)
   - MBProgressHUD (~> 1.2.0)
   - ObjectMapper (~> 3.5)
+  - SDWebImage
   - SwiftHEXColors
   - XLPagerTabStrip (~> 9.0)
 
@@ -45,6 +50,7 @@ SPEC REPOS:
     - Kingfisher
     - MBProgressHUD
     - ObjectMapper
+    - SDWebImage
     - SwiftHEXColors
     - XLPagerTabStrip
 
@@ -59,9 +65,10 @@ SPEC CHECKSUMS:
   Kingfisher: bc5abe80a8e0144537ef1dd5a0b2621b04f7f439
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SDWebImage: f84b0feeb08d2d11e6a9b843cb06d75ebf5b8868
   SwiftHEXColors: 1cb6e5d55c52749aa33db8f088ac55eb71ca4c7f
   XLPagerTabStrip: 27f3bfe23c53b4251c6481b06b1c289458a3fc1d
 
-PODFILE CHECKSUM: 4409bf688ce1b1127695c089caef3903fa9b826d
+PODFILE CHECKSUM: 07c3db48ea4fb3bcbfd5bd4607a70e783c0fcb76
 
 COCOAPODS: 1.15.2

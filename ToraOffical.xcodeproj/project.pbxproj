@@ -13,20 +13,23 @@
 		CB2584132BA58F7700FF6DEC /* LN000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584112BA58F7700FF6DEC /* LN000Screen.xib */; };
 		CB2584172BA58FAA00FF6DEC /* BK000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584152BA58FAA00FF6DEC /* BK000Screen.swift */; };
 		CB2584182BA58FAA00FF6DEC /* BK000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584162BA58FAA00FF6DEC /* BK000Screen.xib */; };
-		CB2584232BA5903F00FF6DEC /* HM000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584212BA5903F00FF6DEC /* HM000Screen.swift */; };
-		CB2584242BA5903F00FF6DEC /* HM000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584222BA5903F00FF6DEC /* HM000Screen.xib */; };
 		CB2584282BA5921500FF6DEC /* PR000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2584262BA5921500FF6DEC /* PR000Screen.swift */; };
 		CB2584292BA5921500FF6DEC /* PR000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2584272BA5921500FF6DEC /* PR000Screen.xib */; };
+		CB2CFF682DDBF4EE00223E68 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2CFF662DDBF4EE00223E68 /* DetailCell.swift */; };
+		CB2CFF692DDBF4EE00223E68 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2CFF672DDBF4EE00223E68 /* DetailCell.xib */; };
 		CB36BFEA2B9C567500E63D38 /* SF-Pro-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE72B9C567400E63D38 /* SF-Pro-Rounded-Regular.ttf */; };
 		CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */; };
 		CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */; };
 		CB36BFEE2B9C9AFC00E63D38 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */; };
-		CB42397A2BD26B3300601696 /* TableViewCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4239782BD26B3300601696 /* TableViewCourseCell.swift */; };
-		CB42397B2BD26B3300601696 /* TableViewCourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4239792BD26B3300601696 /* TableViewCourseCell.xib */; };
 		CB42397F2BD2A61100601696 /* kawaiLession1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */; };
 		CB4239842BD2AA1100601696 /* lession1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB4239832BD2AA1100601696 /* lession1.pdf */; };
 		CB4355182DD3A9ED00D78ADA /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4355162DD3A9ED00D78ADA /* MainTabBarViewController.swift */; };
 		CB4355192DD3A9ED00D78ADA /* MainTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4355172DD3A9ED00D78ADA /* MainTabBarViewController.xib */; };
+		CB4355212DD72C2900D78ADA /* LearnCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4355202DD72C2900D78ADA /* LearnCardCell.xib */; };
+		CB4355222DD72C2900D78ADA /* LearnCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43551F2DD72C2900D78ADA /* LearnCardCell.swift */; };
+		CB4355242DD72F9B00D78ADA /* LN000Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4355232DD72F9B00D78ADA /* LN000Model.swift */; };
+		CB4355262DD72FAF00D78ADA /* LN000Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4355252DD72FAF00D78ADA /* LN000Presenter.swift */; };
+		CB4355282DD72FBC00D78ADA /* LN000Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4355272DD72FBC00D78ADA /* LN000Contract.swift */; };
 		CB4903072D99322900F1B432 /* HomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4903062D99322900F1B432 /* HomeScreen.xib */; };
 		CB4903082D99322900F1B432 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4903052D99322900F1B432 /* HomeScreen.swift */; };
 		CB49030A2D99326E00F1B432 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4903092D99325700F1B432 /* HomeModel.swift */; };
@@ -38,14 +41,19 @@
 		CB4B2DDC2B94C613008BA1B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDA2B94C613008BA1B2 /* Main.storyboard */; };
 		CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDF2B94C614008BA1B2 /* LaunchScreen.storyboard */; };
 		CB54F7062DB94078004FE153 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54F7052DB94078004FE153 /* Constant.swift */; };
-		CB6CDC582BD0B0A500491B81 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6CDC562BD0B0A500491B81 /* CourseCell.swift */; };
-		CB6CDC592BD0B0A500491B81 /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB6CDC572BD0B0A500491B81 /* CourseCell.xib */; };
+		CB65202B2DD8971600265408 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB65202A2DD8971600265408 /* EmptyCell.xib */; };
+		CB65202C2DD8971600265408 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6520292DD8971600265408 /* EmptyCell.swift */; };
 		CB73EFCE2BBCC0180007A0EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFCD2BBCC0180007A0EE /* CardView.swift */; };
 		CB73EFD02BBCC03A0007A0EE /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB73EFCF2BBCC03A0007A0EE /* CardView.xib */; };
 		CB73EFD32BBCC9310007A0EE /* ER000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFD12BBCC9310007A0EE /* ER000Screen.swift */; };
 		CB73EFD42BBCC9310007A0EE /* ER000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB73EFD22BBCC9310007A0EE /* ER000Screen.xib */; };
+		CB8D9E492DE0C82A004A3C37 /* LN001Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D9E482DE0C82A004A3C37 /* LN001Presenter.swift */; };
+		CB8D9E4B2DE0C839004A3C37 /* LN001Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D9E4A2DE0C839004A3C37 /* LN001Model.swift */; };
+		CB8D9E4D2DE0C848004A3C37 /* LN001Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D9E4C2DE0C848004A3C37 /* LN001Contract.swift */; };
+		CB8D9E522DE0C8E6004A3C37 /* LN001CourseDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D9E502DE0C8E6004A3C37 /* LN001CourseDetailCell.swift */; };
+		CB8D9E532DE0C8E6004A3C37 /* LN001CourseDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB8D9E512DE0C8E6004A3C37 /* LN001CourseDetailCell.xib */; };
+		CB98C5D42E3F45AD00052BD6 /* LN001Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB98C5D32E3F45AD00052BD6 /* LN001Screen.xib */; };
 		CB9FD9D42BC93A34008CF4C5 /* LN001Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FD9D22BC93A34008CF4C5 /* LN001Screen.swift */; };
-		CB9FD9D52BC93A34008CF4C5 /* LN001Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9FD9D32BC93A34008CF4C5 /* LN001Screen.xib */; };
 		CBA264332D7895EC0092C42F /* TabbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBA2642E2D7895EC0092C42F /* TabbarCell.xib */; };
 		CBA264352D7895EC0092C42F /* MenuTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBA2642B2D7895EC0092C42F /* MenuTabBarView.xib */; };
 		CBA264362D7895EC0092C42F /* TabbarBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA2642C2D7895EC0092C42F /* TabbarBackgroundView.swift */; };
@@ -58,8 +66,6 @@
 		CBE27A172BC23DCE00FCE0EA /* SuggestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE27A152BC23DCE00FCE0EA /* SuggestCell.xib */; };
 		CBE64AC92D998C5C00CE5225 /* SuggestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64AC82D998C5C00CE5225 /* SuggestView.swift */; };
 		CBE64ACB2D998C9500CE5225 /* SuggestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE64ACA2D998C9500CE5225 /* SuggestView.xib */; };
-		CBE716EB2BC9493800A516A6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE716EA2BC9493800A516A6 /* DetailView.swift */; };
-		CBE716ED2BC9494400A516A6 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE716EC2BC9494400A516A6 /* DetailView.xib */; };
 		CBE716EE2BC96E7B00A516A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */; };
 		CBE716F62BCACE8400A516A6 /* LN002Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE716F42BCACE8400A516A6 /* LN002Screen.swift */; };
 		CBE716F72BCACE8400A516A6 /* LN002Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE716F52BCACE8400A516A6 /* LN002Screen.xib */; };
@@ -72,20 +78,23 @@
 		CB2584112BA58F7700FF6DEC /* LN000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LN000Screen.xib; sourceTree = "<group>"; };
 		CB2584152BA58FAA00FF6DEC /* BK000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BK000Screen.swift; sourceTree = "<group>"; };
 		CB2584162BA58FAA00FF6DEC /* BK000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BK000Screen.xib; sourceTree = "<group>"; };
-		CB2584212BA5903F00FF6DEC /* HM000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HM000Screen.swift; sourceTree = "<group>"; };
-		CB2584222BA5903F00FF6DEC /* HM000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HM000Screen.xib; sourceTree = "<group>"; };
 		CB2584262BA5921500FF6DEC /* PR000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PR000Screen.swift; sourceTree = "<group>"; };
 		CB2584272BA5921500FF6DEC /* PR000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PR000Screen.xib; sourceTree = "<group>"; };
+		CB2CFF662DDBF4EE00223E68 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		CB2CFF672DDBF4EE00223E68 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		CB36BFE72B9C567400E63D38 /* SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
 		CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
 		CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.ttf"; sourceTree = "<group>"; };
 		CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
-		CB4239782BD26B3300601696 /* TableViewCourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCourseCell.swift; sourceTree = "<group>"; };
-		CB4239792BD26B3300601696 /* TableViewCourseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCourseCell.xib; sourceTree = "<group>"; };
 		CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kawaiLession1.mp4; sourceTree = "<group>"; };
 		CB4239832BD2AA1100601696 /* lession1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lession1.pdf; sourceTree = "<group>"; };
 		CB4355162DD3A9ED00D78ADA /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB4355172DD3A9ED00D78ADA /* MainTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
+		CB43551F2DD72C2900D78ADA /* LearnCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCardCell.swift; sourceTree = "<group>"; };
+		CB4355202DD72C2900D78ADA /* LearnCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearnCardCell.xib; sourceTree = "<group>"; };
+		CB4355232DD72F9B00D78ADA /* LN000Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN000Model.swift; sourceTree = "<group>"; };
+		CB4355252DD72FAF00D78ADA /* LN000Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN000Presenter.swift; sourceTree = "<group>"; };
+		CB4355272DD72FBC00D78ADA /* LN000Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN000Contract.swift; sourceTree = "<group>"; };
 		CB4903052D99322900F1B432 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		CB4903062D99322900F1B432 /* HomeScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreen.xib; sourceTree = "<group>"; };
 		CB4903092D99325700F1B432 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
@@ -100,14 +109,19 @@
 		CB4B2DE02B94C614008BA1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4B2DE22B94C614008BA1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB54F7052DB94078004FE153 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		CB6CDC562BD0B0A500491B81 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
-		CB6CDC572BD0B0A500491B81 /* CourseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
+		CB6520292DD8971600265408 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		CB65202A2DD8971600265408 /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
 		CB73EFCD2BBCC0180007A0EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CB73EFCF2BBCC03A0007A0EE /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		CB73EFD12BBCC9310007A0EE /* ER000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ER000Screen.swift; sourceTree = "<group>"; };
 		CB73EFD22BBCC9310007A0EE /* ER000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ER000Screen.xib; sourceTree = "<group>"; };
+		CB8D9E482DE0C82A004A3C37 /* LN001Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN001Presenter.swift; sourceTree = "<group>"; };
+		CB8D9E4A2DE0C839004A3C37 /* LN001Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN001Model.swift; sourceTree = "<group>"; };
+		CB8D9E4C2DE0C848004A3C37 /* LN001Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN001Contract.swift; sourceTree = "<group>"; };
+		CB8D9E502DE0C8E6004A3C37 /* LN001CourseDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN001CourseDetailCell.swift; sourceTree = "<group>"; };
+		CB8D9E512DE0C8E6004A3C37 /* LN001CourseDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LN001CourseDetailCell.xib; sourceTree = "<group>"; };
+		CB98C5D32E3F45AD00052BD6 /* LN001Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LN001Screen.xib; sourceTree = "<group>"; };
 		CB9FD9D22BC93A34008CF4C5 /* LN001Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN001Screen.swift; sourceTree = "<group>"; };
-		CB9FD9D32BC93A34008CF4C5 /* LN001Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LN001Screen.xib; sourceTree = "<group>"; };
 		CBA2642A2D7895EC0092C42F /* MenuTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarView.swift; sourceTree = "<group>"; };
 		CBA2642B2D7895EC0092C42F /* MenuTabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTabBarView.xib; sourceTree = "<group>"; };
 		CBA2642C2D7895EC0092C42F /* TabbarBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarBackgroundView.swift; sourceTree = "<group>"; };
@@ -120,8 +134,6 @@
 		CBE27A152BC23DCE00FCE0EA /* SuggestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestCell.xib; sourceTree = "<group>"; };
 		CBE64AC82D998C5C00CE5225 /* SuggestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestView.swift; sourceTree = "<group>"; };
 		CBE64ACA2D998C9500CE5225 /* SuggestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestView.xib; sourceTree = "<group>"; };
-		CBE716EA2BC9493800A516A6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		CBE716EC2BC9494400A516A6 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		CBE716F42BCACE8400A516A6 /* LN002Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN002Screen.swift; sourceTree = "<group>"; };
 		CBE716F52BCACE8400A516A6 /* LN002Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LN002Screen.xib; sourceTree = "<group>"; };
 		F4AB2409855F840BF015EB48 /* Pods-ToraOffical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToraOffical.debug.xcconfig"; path = "Target Support Files/Pods-ToraOffical/Pods-ToraOffical.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,14 +172,9 @@
 		CB25840F2BA58F5400FF6DEC /* LN Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CB2584102BA58F7700FF6DEC /* LN000Screen.swift */,
-				CB2584112BA58F7700FF6DEC /* LN000Screen.xib */,
-				CB9FD9D22BC93A34008CF4C5 /* LN001Screen.swift */,
-				CB9FD9D32BC93A34008CF4C5 /* LN001Screen.xib */,
-				CBE716F42BCACE8400A516A6 /* LN002Screen.swift */,
-				CBE716F52BCACE8400A516A6 /* LN002Screen.xib */,
-				CBE716EF2BCA71B400A516A6 /* Cells */,
-				CB9FD9CD2BC9383B008CF4C5 /* View */,
+				CB43551A2DD72B0500D78ADA /* LN000Screen */,
+				CB8D60922DDFEC7900F1B3A0 /* LN001Screen */,
+				CB8D9E552DE0DE3C004A3C37 /* LN002Screen */,
 			);
 			path = "LN Screen";
 			sourceTree = "<group>";
@@ -189,8 +196,7 @@
 				CB49030D2D99328700F1B432 /* HomeContract.swift */,
 				CB49030B2D99327700F1B432 /* HomePresenter.swift */,
 				CB4903092D99325700F1B432 /* HomeModel.swift */,
-				CB2584212BA5903F00FF6DEC /* HM000Screen.swift */,
-				CB2584222BA5903F00FF6DEC /* HM000Screen.xib */,
+				CBE27A132BC23D8D00FCE0EA /* Views */,
 				CBE27A112BC23D7800FCE0EA /* Cells */,
 			);
 			path = "HM Screen";
@@ -244,6 +250,31 @@
 				CB4355172DD3A9ED00D78ADA /* MainTabBarViewController.xib */,
 			);
 			path = MainTabBarViewController;
+			sourceTree = "<group>";
+		};
+		CB43551A2DD72B0500D78ADA /* LN000Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CB2584102BA58F7700FF6DEC /* LN000Screen.swift */,
+				CB2584112BA58F7700FF6DEC /* LN000Screen.xib */,
+				CB4355232DD72F9B00D78ADA /* LN000Model.swift */,
+				CB4355252DD72FAF00D78ADA /* LN000Presenter.swift */,
+				CB4355272DD72FBC00D78ADA /* LN000Contract.swift */,
+				CB4355292DD72FC200D78ADA /* Cells */,
+				CB9FD9CD2BC9383B008CF4C5 /* View */,
+			);
+			path = LN000Screen;
+			sourceTree = "<group>";
+		};
+		CB4355292DD72FC200D78ADA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB43551F2DD72C2900D78ADA /* LearnCardCell.swift */,
+				CB4355202DD72C2900D78ADA /* LearnCardCell.xib */,
+				CB6520292DD8971600265408 /* EmptyCell.swift */,
+				CB65202A2DD8971600265408 /* EmptyCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		CB4B2DC82B94C613008BA1B2 = {
@@ -300,13 +331,42 @@
 			path = "ER Screen";
 			sourceTree = "<group>";
 		};
+		CB8D60922DDFEC7900F1B3A0 /* LN001Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CB98C5D32E3F45AD00052BD6 /* LN001Screen.xib */,
+				CB9FD9D22BC93A34008CF4C5 /* LN001Screen.swift */,
+				CB8D9E482DE0C82A004A3C37 /* LN001Presenter.swift */,
+				CB8D9E4A2DE0C839004A3C37 /* LN001Model.swift */,
+				CB8D9E4C2DE0C848004A3C37 /* LN001Contract.swift */,
+				CB8D9E4F2DE0C87B004A3C37 /* Cells */,
+			);
+			path = LN001Screen;
+			sourceTree = "<group>";
+		};
+		CB8D9E4F2DE0C87B004A3C37 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB8D9E502DE0C8E6004A3C37 /* LN001CourseDetailCell.swift */,
+				CB8D9E512DE0C8E6004A3C37 /* LN001CourseDetailCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB8D9E552DE0DE3C004A3C37 /* LN002Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CBE716F42BCACE8400A516A6 /* LN002Screen.swift */,
+				CBE716F52BCACE8400A516A6 /* LN002Screen.xib */,
+			);
+			path = LN002Screen;
+			sourceTree = "<group>";
+		};
 		CB9FD9CD2BC9383B008CF4C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CB73EFCD2BBCC0180007A0EE /* CardView.swift */,
 				CB73EFCF2BBCC03A0007A0EE /* CardView.xib */,
-				CBE716EA2BC9493800A516A6 /* DetailView.swift */,
-				CBE716EC2BC9494400A516A6 /* DetailView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,9 +407,10 @@
 		CBE27A112BC23D7800FCE0EA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CBE27A132BC23D8D00FCE0EA /* Views */,
 				CBE27A142BC23DCE00FCE0EA /* SuggestCell.swift */,
 				CBE27A152BC23DCE00FCE0EA /* SuggestCell.xib */,
+				CB2CFF662DDBF4EE00223E68 /* DetailCell.swift */,
+				CB2CFF672DDBF4EE00223E68 /* DetailCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -361,17 +422,6 @@
 				CBE64ACA2D998C9500CE5225 /* SuggestView.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		CBE716EF2BCA71B400A516A6 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				CB6CDC562BD0B0A500491B81 /* CourseCell.swift */,
-				CB6CDC572BD0B0A500491B81 /* CourseCell.xib */,
-				CB4239782BD26B3300601696 /* TableViewCourseCell.swift */,
-				CB4239792BD26B3300601696 /* TableViewCourseCell.xib */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,13 +486,13 @@
 			files = (
 				CB42397F2BD2A61100601696 /* kawaiLession1.mp4 in Resources */,
 				CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */,
-				CB9FD9D52BC93A34008CF4C5 /* LN001Screen.xib in Resources */,
+				CB8D9E532DE0C8E6004A3C37 /* LN001CourseDetailCell.xib in Resources */,
+				CB4355212DD72C2900D78ADA /* LearnCardCell.xib in Resources */,
 				CBE716EE2BC96E7B00A516A6 /* Assets.xcassets in Resources */,
 				CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */,
-				CBE716ED2BC9494400A516A6 /* DetailView.xib in Resources */,
 				CBE27A172BC23DCE00FCE0EA /* SuggestCell.xib in Resources */,
 				CB73EFD02BBCC03A0007A0EE /* CardView.xib in Resources */,
-				CB6CDC592BD0B0A500491B81 /* CourseCell.xib in Resources */,
+				CB65202B2DD8971600265408 /* EmptyCell.xib in Resources */,
 				CB73EFD42BBCC9310007A0EE /* ER000Screen.xib in Resources */,
 				CB2584082BA58A3800FF6DEC /* Localizable.strings in Resources */,
 				CB4355192DD3A9ED00D78ADA /* MainTabBarViewController.xib in Resources */,
@@ -450,16 +500,16 @@
 				CB36BFEA2B9C567500E63D38 /* SF-Pro-Rounded-Regular.ttf in Resources */,
 				CB2584132BA58F7700FF6DEC /* LN000Screen.xib in Resources */,
 				CB4B2DDC2B94C613008BA1B2 /* Main.storyboard in Resources */,
+				CB2CFF692DDBF4EE00223E68 /* DetailCell.xib in Resources */,
 				CBE716F72BCACE8400A516A6 /* LN002Screen.xib in Resources */,
 				CB2584182BA58FAA00FF6DEC /* BK000Screen.xib in Resources */,
 				CBA264332D7895EC0092C42F /* TabbarCell.xib in Resources */,
 				CBA264352D7895EC0092C42F /* MenuTabBarView.xib in Resources */,
 				CB4903072D99322900F1B432 /* HomeScreen.xib in Resources */,
-				CB2584242BA5903F00FF6DEC /* HM000Screen.xib in Resources */,
 				CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */,
 				CB4239842BD2AA1100601696 /* lession1.pdf in Resources */,
-				CB42397B2BD26B3300601696 /* TableViewCourseCell.xib in Resources */,
 				CB2584292BA5921500FF6DEC /* PR000Screen.xib in Resources */,
+				CB98C5D42E3F45AD00052BD6 /* LN001Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA264362D7895EC0092C42F /* TabbarBackgroundView.swift in Sources */,
+				CB8D9E4D2DE0C848004A3C37 /* LN001Contract.swift in Sources */,
 				CBA264372D7895EC0092C42F /* TabbarCell.swift in Sources */,
 				CB4355182DD3A9ED00D78ADA /* MainTabBarViewController.swift in Sources */,
 				CB49030A2D99326E00F1B432 /* HomeModel.swift in Sources */,
@@ -520,26 +571,31 @@
 				CBA264382D7895EC0092C42F /* TabbarObject.swift in Sources */,
 				CBA2643A2D7895EC0092C42F /* MenuTabBarView.swift in Sources */,
 				CB36BFEE2B9C9AFC00E63D38 /* OnboardingScreen.swift in Sources */,
+				CB4355222DD72C2900D78ADA /* LearnCardCell.swift in Sources */,
+				CB65202C2DD8971600265408 /* EmptyCell.swift in Sources */,
+				CB8D9E522DE0C8E6004A3C37 /* LN001CourseDetailCell.swift in Sources */,
 				CB4B2DD92B94C613008BA1B2 /* LoginScreen.swift in Sources */,
-				CB6CDC582BD0B0A500491B81 /* CourseCell.swift in Sources */,
+				CB8D9E492DE0C82A004A3C37 /* LN001Presenter.swift in Sources */,
+				CB2CFF682DDBF4EE00223E68 /* DetailCell.swift in Sources */,
 				CB49030E2D99329500F1B432 /* HomeContract.swift in Sources */,
 				CB73EFD32BBCC9310007A0EE /* ER000Screen.swift in Sources */,
 				CBE27A162BC23DCE00FCE0EA /* SuggestCell.swift in Sources */,
 				CB2584122BA58F7700FF6DEC /* LN000Screen.swift in Sources */,
 				CBE27A082BC11BAC00FCE0EA /* UIViewExtension.swift in Sources */,
 				CB2584282BA5921500FF6DEC /* PR000Screen.swift in Sources */,
+				CB4355262DD72FAF00D78ADA /* LN000Presenter.swift in Sources */,
 				CBE716F62BCACE8400A516A6 /* LN002Screen.swift in Sources */,
 				CBA2643D2D7897A20092C42F /* BaseNibView.swift in Sources */,
+				CB4355282DD72FBC00D78ADA /* LN000Contract.swift in Sources */,
 				CBE64AC92D998C5C00CE5225 /* SuggestView.swift in Sources */,
 				CB54F7062DB94078004FE153 /* Constant.swift in Sources */,
-				CB42397A2BD26B3300601696 /* TableViewCourseCell.swift in Sources */,
 				CB4903082D99322900F1B432 /* HomeScreen.swift in Sources */,
-				CB2584232BA5903F00FF6DEC /* HM000Screen.swift in Sources */,
 				CB4B2DD52B94C613008BA1B2 /* AppDelegate.swift in Sources */,
 				CB2584172BA58FAA00FF6DEC /* BK000Screen.swift in Sources */,
 				CB9FD9D42BC93A34008CF4C5 /* LN001Screen.swift in Sources */,
-				CBE716EB2BC9493800A516A6 /* DetailView.swift in Sources */,
+				CB8D9E4B2DE0C839004A3C37 /* LN001Model.swift in Sources */,
 				CB4B2DD72B94C613008BA1B2 /* SceneDelegate.swift in Sources */,
+				CB4355242DD72F9B00D78ADA /* LN000Model.swift in Sources */,
 				CB73EFCE2BBCC0180007A0EE /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
