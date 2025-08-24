@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EmptyCell: UITableViewCell {
+final class EmptyCell: UITableViewCell {
 
     @IBOutlet private weak var heightConstraint: NSLayoutConstraint!
     

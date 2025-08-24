@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LN001CourseDetailCell: UITableViewCell {
+final class LN001CourseDetailCell: UITableViewCell {
     @IBOutlet private weak var iconImage: UIImageView!
     @IBOutlet private weak var titleImage: UILabel!
     @IBOutlet private weak var iconExpandCollapse: UIImageView!
@@ -37,7 +37,18 @@ class LN001CourseDetailCell: UITableViewCell {
         iconExpandCollapse.image = UIImage(systemName: "chevron.down")
         iconExpandCollapse.tintColor = .label
         iconExpandCollapse.transform = CGAffineTransform.identity
+//        handle(screen: <#T##ScreenType#>, content: <#T##Content#>)
     }
+    
+    func handle(screen: CourseType, content: ListCourse) {
+        switch (screen, content) {
+        case (.n5Course, .kaiwa):
+            titleImage.textColor = .black
+        default:
+            titleImage.textColor = .gray
+        }
+    }
+
     
     func updateData(iconCourse: String, title: String) {
         iconImage.image = UIImage(named: iconCourse)

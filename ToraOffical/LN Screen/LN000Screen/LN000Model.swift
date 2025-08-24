@@ -7,23 +7,23 @@
 
 import Foundation
 
-class LN000Model: LN000Contract.Model {
+final class LN000Model: LN000Contract.Model {
     enum CellType {
-        case content(title: String, imageName: String, backgroundColor: String)
+        case content(type: CourseType)
         case empty(height: CGFloat)
     }
     var cells: [CellType] = []
     
     func setupData() {
         cells.append(.empty(height: 10))
-        cells.append(.content(title: "Khóa học N5", imageName: "fuji", backgroundColor: "#33A2C5"))
+        cells.append(.content(type: .n5Course))
         cells.append(.empty(height: 10))
-        cells.append(.content(title: "Khóa học N4", imageName: "shushi", backgroundColor: "#ECA451"))
+        cells.append(.content(type: .n4Course))
         cells.append(.empty(height: 10))
-        cells.append(.content(title: "Khóa học N3", imageName: "noodle-icon", backgroundColor: "#83C579"))
+        cells.append(.content(type: .n3Course))
         cells.append(.empty(height: 10))
-        cells.append(.content(title: "Khóa học N2", imageName: "flag-icon", backgroundColor: "#9F7FD1"))
+        cells.append(.content(type: .n2Course))
         cells.append(.empty(height: 10))
-        cells.append(.content(title: "Khóa học N1", imageName: "gate-icon", backgroundColor: "#5389B9"))
+        cells.append(.content(type: .n1Course))
     }
 }

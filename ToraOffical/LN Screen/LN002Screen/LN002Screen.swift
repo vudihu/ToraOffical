@@ -10,7 +10,7 @@ import AVKit
 import AVFoundation
 import PDFKit
 
-class LN002Screen: UIViewController {
+final class LN002Screen: UIViewController {
     
     @IBOutlet private weak var titleHeader: UILabel!
     @IBOutlet private weak var videoView: UIView!
@@ -23,7 +23,7 @@ class LN002Screen: UIViewController {
     
     private var player: AVPlayer?
     private let pdf = PDFView()
-    var screenType: ScreenType = .n1Course
+    var screenType: CourseType = .n1Course
     private var isScroll: Bool = false {
         didSet {
             scrollView.isScrollEnabled = isScroll
@@ -45,7 +45,7 @@ class LN002Screen: UIViewController {
     
     private func setupUI() {
         scrollView.isScrollEnabled = false
-        titleHeader.textColor = UIColor(hexString: screenType.color)
+        titleHeader.textColor = UIColor(hexString: screenType.backgroundColor)
         videoView.layer.shadowColor = UIColor.black.cgColor
         videoView.layer.shadowOpacity = 0.5
         videoView.layer.shadowOffset = CGSize(width: 0, height: 2)

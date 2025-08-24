@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BK000Screen: UIViewController {
+final class BK000Screen: UIViewController {
 
     @IBOutlet private weak var headerView: UIView!
     @IBOutlet private weak var descriptionLabel: UILabel!
