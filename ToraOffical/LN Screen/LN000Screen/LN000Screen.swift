@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LN000Screen: UIViewController {
+final class LN000Screen: BaseViewController {
     @IBOutlet private weak var headerView: UIView!
     @IBOutlet private weak var tableView: UITableView!
     
@@ -34,11 +34,11 @@ extension LN000Screen: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellType = presenter.cells[indexPath.row]
         switch cellType {
-        case .content(let title, let imageName, let backgroundColor):
+        case .content(let type):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "LearnCardCell", for: indexPath) as? LearnCardCell else {
                 return UITableViewCell()
             }
-            cell.setupData(title: title, imageName: imageName, backgroundColor: backgroundColor)
+            cell.setupData(type: type)
             cell.delegate = self
             return cell
         case .empty(let height):
@@ -52,8 +52,20 @@ extension LN000Screen: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension LN000Screen: LearnCardCellDelegate {
-    func tapToLearnDetail() {
-        let ln001Screen = LN001Screen()
-        navigationController?.pushViewController(ln001Screen, animated: true)
+    func tapToLearnDetail(from cell: LearnCardCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        let cellType = presenter.cells[indexPath.row]
+        switch cellType {
+        case .content(let type):
+            navigateToDetail(for: type)
+        case .empty:
+            break
+        }
+    }
+    
+    private func navigateToDetail(for type: CourseType) {
+        let detailVC = LN001Screen()
+        detailVC.screenType = type
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

@@ -21,7 +21,7 @@ struct YouTubeVideo {
     }
 }
 
-class DetailCell: UICollectionViewCell {
+final class DetailCell: UICollectionViewCell {
 
     @IBOutlet private weak var selectView: UIView!
     @IBOutlet private weak var thumbnailImageView: UIImageView!

@@ -47,6 +47,7 @@
 		CB73EFD02BBCC03A0007A0EE /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB73EFCF2BBCC03A0007A0EE /* CardView.xib */; };
 		CB73EFD32BBCC9310007A0EE /* ER000Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73EFD12BBCC9310007A0EE /* ER000Screen.swift */; };
 		CB73EFD42BBCC9310007A0EE /* ER000Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB73EFD22BBCC9310007A0EE /* ER000Screen.xib */; };
+		CB880ADB2E5AF54C00D6917D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB880ADA2E5AF54C00D6917D /* BaseViewController.swift */; };
 		CB8D9E492DE0C82A004A3C37 /* LN001Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D9E482DE0C82A004A3C37 /* LN001Presenter.swift */; };
 		CB8D9E4B2DE0C839004A3C37 /* LN001Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D9E4A2DE0C839004A3C37 /* LN001Model.swift */; };
 		CB8D9E4D2DE0C848004A3C37 /* LN001Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D9E4C2DE0C848004A3C37 /* LN001Contract.swift */; };
@@ -115,6 +116,7 @@
 		CB73EFCF2BBCC03A0007A0EE /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		CB73EFD12BBCC9310007A0EE /* ER000Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ER000Screen.swift; sourceTree = "<group>"; };
 		CB73EFD22BBCC9310007A0EE /* ER000Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ER000Screen.xib; sourceTree = "<group>"; };
+		CB880ADA2E5AF54C00D6917D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CB8D9E482DE0C82A004A3C37 /* LN001Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN001Presenter.swift; sourceTree = "<group>"; };
 		CB8D9E4A2DE0C839004A3C37 /* LN001Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN001Model.swift; sourceTree = "<group>"; };
 		CB8D9E4C2DE0C848004A3C37 /* LN001Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LN001Contract.swift; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 			children = (
 				CB54F7052DB94078004FE153 /* Constant.swift */,
 				CBA2643C2D7897A20092C42F /* BaseNibView.swift */,
+				CB880ADA2E5AF54C00D6917D /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				CBA264372D7895EC0092C42F /* TabbarCell.swift in Sources */,
 				CB4355182DD3A9ED00D78ADA /* MainTabBarViewController.swift in Sources */,
 				CB49030A2D99326E00F1B432 /* HomeModel.swift in Sources */,
+				CB880ADB2E5AF54C00D6917D /* BaseViewController.swift in Sources */,
 				CB49030C2D99328200F1B432 /* HomePresenter.swift in Sources */,
 				CBA264382D7895EC0092C42F /* TabbarObject.swift in Sources */,
 				CBA2643A2D7895EC0092C42F /* MenuTabBarView.swift in Sources */,

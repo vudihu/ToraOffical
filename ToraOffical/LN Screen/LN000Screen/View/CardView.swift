@@ -19,7 +19,7 @@ enum CardType {
     case n1Card
 }
 
-class CardView: UIView {
+final class CardView: UIView {
     @IBOutlet private weak var cardView: UIView!
     @IBOutlet private weak var detailView: UIView!
     @IBOutlet private weak var iconImage: UIImageView!

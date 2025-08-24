@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PR000Screen: UIViewController {
+final class PR000Screen: UIViewController {
     @IBOutlet private weak var bgView: UIView!
     @IBOutlet private weak var imageView: UIView!
     

@@ -8,10 +8,10 @@
 import UIKit
 
 protocol LearnCardCellDelegate: AnyObject {
-    func tapToLearnDetail()
+    func tapToLearnDetail(from cell: LearnCardCell)
 }
 
-class LearnCardCell: UITableViewCell {
+final class LearnCardCell: UITableViewCell {
     @IBOutlet private weak var cardView: UIView!
     @IBOutlet private weak var levelTitle: UILabel!
     @IBOutlet private weak var levelImage: UIImageView!
@@ -21,13 +21,13 @@ class LearnCardCell: UITableViewCell {
         cardView.layer.cornerRadius = 16
     }
     
-    func setupData(title: String, imageName: String, backgroundColor: String) {
-        levelTitle.text = title
-        levelImage.image = UIImage(named: imageName)
-        cardView.backgroundColor = UIColor(hexString: backgroundColor)
+    func setupData(type: CourseType) {
+        levelTitle.text = type.title
+        levelImage.image = UIImage(named: type.imageName)
+        cardView.backgroundColor = UIColor(hexString: type.backgroundColor)
     }
     
     @IBAction func tapToCourse(_ sender: Any) {
-        delegate?.tapToLearnDetail()
+        delegate?.tapToLearnDetail(from: self)
     }
 }

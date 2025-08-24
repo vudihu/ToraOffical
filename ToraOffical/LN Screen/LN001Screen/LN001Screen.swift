@@ -7,13 +7,13 @@
 
 import UIKit
 
-class LN001Screen: UIViewController {
+final class LN001Screen: BaseViewController {
     
     @IBOutlet private weak var courseNameView: UIView!
     @IBOutlet private weak var courseNameLabel: UILabel!
     @IBOutlet private weak var tableView: UITableView!
     private let presenter: LN001Contract.Presenter = LN001Presenter(model: LN001Model())
-    var screenType: ScreenType = .n1Course
+    var screenType: CourseType = .n1Course
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class LN001Screen: UIViewController {
     
     private func setupUI() {
         courseNameLabel.text = screenType.title
-        courseNameView.backgroundColor = UIColor(hexString: screenType.color)
+        courseNameView.backgroundColor = UIColor(hexString: screenType.backgroundColor)
         courseNameView.roundCorners(corners: [.bottomLeft, .topLeft], radius: 18)
         tableView.layer.cornerRadius = 8
     }

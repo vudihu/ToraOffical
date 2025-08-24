@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HomeModel: HomeContract.Model {
+final class HomeModel: HomeContract.Model {
     enum CellType {
         case content(title: String, videos: [YouTubeVideo])
         case empty(height: CGFloat)
