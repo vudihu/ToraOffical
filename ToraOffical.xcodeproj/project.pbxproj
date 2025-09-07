@@ -21,8 +21,6 @@
 		CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */; };
 		CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */; };
 		CB36BFEE2B9C9AFC00E63D38 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */; };
-		CB42397F2BD2A61100601696 /* kawaiLession1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */; };
-		CB4239842BD2AA1100601696 /* lession1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB4239832BD2AA1100601696 /* lession1.pdf */; };
 		CB4355182DD3A9ED00D78ADA /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4355162DD3A9ED00D78ADA /* MainTabBarViewController.swift */; };
 		CB4355192DD3A9ED00D78ADA /* MainTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4355172DD3A9ED00D78ADA /* MainTabBarViewController.xib */; };
 		CB4355212DD72C2900D78ADA /* LearnCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4355202DD72C2900D78ADA /* LearnCardCell.xib */; };
@@ -62,6 +60,31 @@
 		CBA264382D7895EC0092C42F /* TabbarObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA264312D7895EC0092C42F /* TabbarObject.swift */; };
 		CBA2643A2D7895EC0092C42F /* MenuTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA2642A2D7895EC0092C42F /* MenuTabBarView.swift */; };
 		CBA2643D2D7897A20092C42F /* BaseNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA2643C2D7897A20092C42F /* BaseNibView.swift */; };
+		CBBAB2D52E6D663600A93307 /* n5Kaiwa19.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2CE2E6D663600A93307 /* n5Kaiwa19.pdf */; };
+		CBBAB2D62E6D663600A93307 /* n5Kaiwa22.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2D12E6D663600A93307 /* n5Kaiwa22.pdf */; };
+		CBBAB2D72E6D663600A93307 /* n5Kaiwa17.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2CC2E6D663600A93307 /* n5Kaiwa17.pdf */; };
+		CBBAB2D82E6D663600A93307 /* n5Kaiwa8.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C32E6D663600A93307 /* n5Kaiwa8.pdf */; };
+		CBBAB2D92E6D663600A93307 /* n5Kaiwa23.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2D22E6D663600A93307 /* n5Kaiwa23.pdf */; };
+		CBBAB2DA2E6D663600A93307 /* n5Kaiwa7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C22E6D663600A93307 /* n5Kaiwa7.pdf */; };
+		CBBAB2DB2E6D663600A93307 /* n5Kaiwa14.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C92E6D663600A93307 /* n5Kaiwa14.pdf */; };
+		CBBAB2DC2E6D663600A93307 /* n5Kaiwa1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2BC2E6D663600A93307 /* n5Kaiwa1.pdf */; };
+		CBBAB2DD2E6D663600A93307 /* n5Kaiwa2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2BD2E6D663600A93307 /* n5Kaiwa2.pdf */; };
+		CBBAB2DE2E6D663600A93307 /* n5Kaiwa24.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2D32E6D663600A93307 /* n5Kaiwa24.pdf */; };
+		CBBAB2DF2E6D663600A93307 /* n5Kaiwa11.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C62E6D663600A93307 /* n5Kaiwa11.pdf */; };
+		CBBAB2E02E6D663600A93307 /* n5Kaiwa25.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2D42E6D663600A93307 /* n5Kaiwa25.pdf */; };
+		CBBAB2E12E6D663600A93307 /* n5Kaiwa4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2BF2E6D663600A93307 /* n5Kaiwa4.pdf */; };
+		CBBAB2E22E6D663600A93307 /* n5Kaiwa6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C12E6D663600A93307 /* n5Kaiwa6.pdf */; };
+		CBBAB2E32E6D663600A93307 /* n5Kaiwa3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2BE2E6D663600A93307 /* n5Kaiwa3.pdf */; };
+		CBBAB2E42E6D663600A93307 /* n5Kaiwa13.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C82E6D663600A93307 /* n5Kaiwa13.pdf */; };
+		CBBAB2E52E6D663600A93307 /* n5Kaiwa12.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C72E6D663600A93307 /* n5Kaiwa12.pdf */; };
+		CBBAB2E62E6D663600A93307 /* n5Kaiwa10.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C52E6D663600A93307 /* n5Kaiwa10.pdf */; };
+		CBBAB2E72E6D663600A93307 /* n5Kaiwa21.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2D02E6D663600A93307 /* n5Kaiwa21.pdf */; };
+		CBBAB2E82E6D663600A93307 /* n5Kaiwa15.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2CA2E6D663600A93307 /* n5Kaiwa15.pdf */; };
+		CBBAB2E92E6D663600A93307 /* n5Kaiwa18.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2CD2E6D663600A93307 /* n5Kaiwa18.pdf */; };
+		CBBAB2EA2E6D663600A93307 /* n5Kaiwa20.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2CF2E6D663600A93307 /* n5Kaiwa20.pdf */; };
+		CBBAB2EB2E6D663600A93307 /* n5Kaiwa5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C02E6D663600A93307 /* n5Kaiwa5.pdf */; };
+		CBBAB2EC2E6D663600A93307 /* n5Kaiwa9.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2C42E6D663600A93307 /* n5Kaiwa9.pdf */; };
+		CBBAB2ED2E6D663600A93307 /* n5Kaiwa16.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBBAB2CB2E6D663600A93307 /* n5Kaiwa16.pdf */; };
 		CBE27A082BC11BAC00FCE0EA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE27A072BC11BAC00FCE0EA /* UIViewExtension.swift */; };
 		CBE27A162BC23DCE00FCE0EA /* SuggestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE27A142BC23DCE00FCE0EA /* SuggestCell.swift */; };
 		CBE27A172BC23DCE00FCE0EA /* SuggestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE27A152BC23DCE00FCE0EA /* SuggestCell.xib */; };
@@ -87,8 +110,6 @@
 		CB36BFE82B9C567400E63D38 /* SF-Pro-Rounded-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.ttf"; sourceTree = "<group>"; };
 		CB36BFE92B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.ttf"; sourceTree = "<group>"; };
 		CB36BFED2B9C9AFC00E63D38 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
-		CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kawaiLession1.mp4; sourceTree = "<group>"; };
-		CB4239832BD2AA1100601696 /* lession1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lession1.pdf; sourceTree = "<group>"; };
 		CB4355162DD3A9ED00D78ADA /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB4355172DD3A9ED00D78ADA /* MainTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
 		CB43551F2DD72C2900D78ADA /* LearnCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnCardCell.swift; sourceTree = "<group>"; };
@@ -131,6 +152,31 @@
 		CBA2642E2D7895EC0092C42F /* TabbarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarCell.xib; sourceTree = "<group>"; };
 		CBA264312D7895EC0092C42F /* TabbarObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarObject.swift; sourceTree = "<group>"; };
 		CBA2643C2D7897A20092C42F /* BaseNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNibView.swift; sourceTree = "<group>"; };
+		CBBAB2BC2E6D663600A93307 /* n5Kaiwa1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa1.pdf; sourceTree = "<group>"; };
+		CBBAB2BD2E6D663600A93307 /* n5Kaiwa2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa2.pdf; sourceTree = "<group>"; };
+		CBBAB2BE2E6D663600A93307 /* n5Kaiwa3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa3.pdf; sourceTree = "<group>"; };
+		CBBAB2BF2E6D663600A93307 /* n5Kaiwa4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa4.pdf; sourceTree = "<group>"; };
+		CBBAB2C02E6D663600A93307 /* n5Kaiwa5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa5.pdf; sourceTree = "<group>"; };
+		CBBAB2C12E6D663600A93307 /* n5Kaiwa6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa6.pdf; sourceTree = "<group>"; };
+		CBBAB2C22E6D663600A93307 /* n5Kaiwa7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa7.pdf; sourceTree = "<group>"; };
+		CBBAB2C32E6D663600A93307 /* n5Kaiwa8.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa8.pdf; sourceTree = "<group>"; };
+		CBBAB2C42E6D663600A93307 /* n5Kaiwa9.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa9.pdf; sourceTree = "<group>"; };
+		CBBAB2C52E6D663600A93307 /* n5Kaiwa10.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa10.pdf; sourceTree = "<group>"; };
+		CBBAB2C62E6D663600A93307 /* n5Kaiwa11.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa11.pdf; sourceTree = "<group>"; };
+		CBBAB2C72E6D663600A93307 /* n5Kaiwa12.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa12.pdf; sourceTree = "<group>"; };
+		CBBAB2C82E6D663600A93307 /* n5Kaiwa13.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa13.pdf; sourceTree = "<group>"; };
+		CBBAB2C92E6D663600A93307 /* n5Kaiwa14.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa14.pdf; sourceTree = "<group>"; };
+		CBBAB2CA2E6D663600A93307 /* n5Kaiwa15.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa15.pdf; sourceTree = "<group>"; };
+		CBBAB2CB2E6D663600A93307 /* n5Kaiwa16.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa16.pdf; sourceTree = "<group>"; };
+		CBBAB2CC2E6D663600A93307 /* n5Kaiwa17.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa17.pdf; sourceTree = "<group>"; };
+		CBBAB2CD2E6D663600A93307 /* n5Kaiwa18.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa18.pdf; sourceTree = "<group>"; };
+		CBBAB2CE2E6D663600A93307 /* n5Kaiwa19.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa19.pdf; sourceTree = "<group>"; };
+		CBBAB2CF2E6D663600A93307 /* n5Kaiwa20.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa20.pdf; sourceTree = "<group>"; };
+		CBBAB2D02E6D663600A93307 /* n5Kaiwa21.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa21.pdf; sourceTree = "<group>"; };
+		CBBAB2D12E6D663600A93307 /* n5Kaiwa22.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa22.pdf; sourceTree = "<group>"; };
+		CBBAB2D22E6D663600A93307 /* n5Kaiwa23.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa23.pdf; sourceTree = "<group>"; };
+		CBBAB2D32E6D663600A93307 /* n5Kaiwa24.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa24.pdf; sourceTree = "<group>"; };
+		CBBAB2D42E6D663600A93307 /* n5Kaiwa25.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = n5Kaiwa25.pdf; sourceTree = "<group>"; };
 		CBE27A072BC11BAC00FCE0EA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = ToraOffical/UIViewExtension.swift; sourceTree = SOURCE_ROOT; };
 		CBE27A142BC23DCE00FCE0EA /* SuggestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestCell.swift; sourceTree = "<group>"; };
 		CBE27A152BC23DCE00FCE0EA /* SuggestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestCell.xib; sourceTree = "<group>"; };
@@ -229,18 +275,34 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		CB4239802BD2A9A400601696 /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-				CB42397E2BD2A61100601696 /* kawaiLession1.mp4 */,
-			);
-			path = Videos;
-			sourceTree = "<group>";
-		};
 		CB4239822BD2A9F900601696 /* PDFs */ = {
 			isa = PBXGroup;
 			children = (
-				CB4239832BD2AA1100601696 /* lession1.pdf */,
+				CBBAB2BC2E6D663600A93307 /* n5Kaiwa1.pdf */,
+				CBBAB2BD2E6D663600A93307 /* n5Kaiwa2.pdf */,
+				CBBAB2BE2E6D663600A93307 /* n5Kaiwa3.pdf */,
+				CBBAB2BF2E6D663600A93307 /* n5Kaiwa4.pdf */,
+				CBBAB2C02E6D663600A93307 /* n5Kaiwa5.pdf */,
+				CBBAB2C12E6D663600A93307 /* n5Kaiwa6.pdf */,
+				CBBAB2C22E6D663600A93307 /* n5Kaiwa7.pdf */,
+				CBBAB2C32E6D663600A93307 /* n5Kaiwa8.pdf */,
+				CBBAB2C42E6D663600A93307 /* n5Kaiwa9.pdf */,
+				CBBAB2C52E6D663600A93307 /* n5Kaiwa10.pdf */,
+				CBBAB2C62E6D663600A93307 /* n5Kaiwa11.pdf */,
+				CBBAB2C72E6D663600A93307 /* n5Kaiwa12.pdf */,
+				CBBAB2C82E6D663600A93307 /* n5Kaiwa13.pdf */,
+				CBBAB2C92E6D663600A93307 /* n5Kaiwa14.pdf */,
+				CBBAB2CA2E6D663600A93307 /* n5Kaiwa15.pdf */,
+				CBBAB2CB2E6D663600A93307 /* n5Kaiwa16.pdf */,
+				CBBAB2CC2E6D663600A93307 /* n5Kaiwa17.pdf */,
+				CBBAB2CD2E6D663600A93307 /* n5Kaiwa18.pdf */,
+				CBBAB2CE2E6D663600A93307 /* n5Kaiwa19.pdf */,
+				CBBAB2CF2E6D663600A93307 /* n5Kaiwa20.pdf */,
+				CBBAB2D02E6D663600A93307 /* n5Kaiwa21.pdf */,
+				CBBAB2D12E6D663600A93307 /* n5Kaiwa22.pdf */,
+				CBBAB2D22E6D663600A93307 /* n5Kaiwa23.pdf */,
+				CBBAB2D32E6D663600A93307 /* n5Kaiwa24.pdf */,
+				CBBAB2D42E6D663600A93307 /* n5Kaiwa25.pdf */,
 			);
 			path = PDFs;
 			sourceTree = "<group>";
@@ -315,7 +377,6 @@
 				CB73EFD52BBCC9400007A0EE /* ER Screen */,
 				CB36BFE12B9C49F800E63D38 /* Extension */,
 				CBCE2C032B9C1E6100D4E274 /* Font */,
-				CB4239802BD2A9A400601696 /* Videos */,
 				CB4239822BD2A9F900601696 /* PDFs */,
 				CB4B2DDD2B94C614008BA1B2 /* Assets.xcassets */,
 				CB4B2DDF2B94C614008BA1B2 /* LaunchScreen.storyboard */,
@@ -487,13 +548,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB42397F2BD2A61100601696 /* kawaiLession1.mp4 in Resources */,
 				CB36BFEC2B9C567500E63D38 /* SF-Pro-Rounded-Bold.ttf in Resources */,
 				CB8D9E532DE0C8E6004A3C37 /* LN001CourseDetailCell.xib in Resources */,
 				CB4355212DD72C2900D78ADA /* LearnCardCell.xib in Resources */,
 				CBE716EE2BC96E7B00A516A6 /* Assets.xcassets in Resources */,
 				CB4B2DE12B94C614008BA1B2 /* LaunchScreen.storyboard in Resources */,
 				CBE27A172BC23DCE00FCE0EA /* SuggestCell.xib in Resources */,
+				CBBAB2D52E6D663600A93307 /* n5Kaiwa19.pdf in Resources */,
+				CBBAB2D62E6D663600A93307 /* n5Kaiwa22.pdf in Resources */,
+				CBBAB2D72E6D663600A93307 /* n5Kaiwa17.pdf in Resources */,
+				CBBAB2D82E6D663600A93307 /* n5Kaiwa8.pdf in Resources */,
+				CBBAB2D92E6D663600A93307 /* n5Kaiwa23.pdf in Resources */,
+				CBBAB2DA2E6D663600A93307 /* n5Kaiwa7.pdf in Resources */,
+				CBBAB2DB2E6D663600A93307 /* n5Kaiwa14.pdf in Resources */,
+				CBBAB2DC2E6D663600A93307 /* n5Kaiwa1.pdf in Resources */,
+				CBBAB2DD2E6D663600A93307 /* n5Kaiwa2.pdf in Resources */,
+				CBBAB2DE2E6D663600A93307 /* n5Kaiwa24.pdf in Resources */,
+				CBBAB2DF2E6D663600A93307 /* n5Kaiwa11.pdf in Resources */,
+				CBBAB2E02E6D663600A93307 /* n5Kaiwa25.pdf in Resources */,
+				CBBAB2E12E6D663600A93307 /* n5Kaiwa4.pdf in Resources */,
+				CBBAB2E22E6D663600A93307 /* n5Kaiwa6.pdf in Resources */,
+				CBBAB2E32E6D663600A93307 /* n5Kaiwa3.pdf in Resources */,
+				CBBAB2E42E6D663600A93307 /* n5Kaiwa13.pdf in Resources */,
+				CBBAB2E52E6D663600A93307 /* n5Kaiwa12.pdf in Resources */,
+				CBBAB2E62E6D663600A93307 /* n5Kaiwa10.pdf in Resources */,
+				CBBAB2E72E6D663600A93307 /* n5Kaiwa21.pdf in Resources */,
+				CBBAB2E82E6D663600A93307 /* n5Kaiwa15.pdf in Resources */,
+				CBBAB2E92E6D663600A93307 /* n5Kaiwa18.pdf in Resources */,
+				CBBAB2EA2E6D663600A93307 /* n5Kaiwa20.pdf in Resources */,
+				CBBAB2EB2E6D663600A93307 /* n5Kaiwa5.pdf in Resources */,
+				CBBAB2EC2E6D663600A93307 /* n5Kaiwa9.pdf in Resources */,
+				CBBAB2ED2E6D663600A93307 /* n5Kaiwa16.pdf in Resources */,
 				CB73EFD02BBCC03A0007A0EE /* CardView.xib in Resources */,
 				CB65202B2DD8971600265408 /* EmptyCell.xib in Resources */,
 				CB73EFD42BBCC9310007A0EE /* ER000Screen.xib in Resources */,
@@ -510,7 +595,6 @@
 				CBA264352D7895EC0092C42F /* MenuTabBarView.xib in Resources */,
 				CB4903072D99322900F1B432 /* HomeScreen.xib in Resources */,
 				CB36BFEB2B9C567500E63D38 /* SF-Pro-Rounded-Semibold.ttf in Resources */,
-				CB4239842BD2AA1100601696 /* lession1.pdf in Resources */,
 				CB2584292BA5921500FF6DEC /* PR000Screen.xib in Resources */,
 				CB98C5D42E3F45AD00052BD6 /* LN001Screen.xib in Resources */,
 			);
