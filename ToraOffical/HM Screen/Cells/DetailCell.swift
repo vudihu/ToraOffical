@@ -21,11 +21,19 @@ struct YouTubeVideo {
     }
 }
 
+protocol DetailCellDelegate: NSObjectProtocol {
+    func tapSelectItem(number: String)
+}
+
 final class DetailCell: UICollectionViewCell {
 
     @IBOutlet private weak var selectView: UIView!
     @IBOutlet private weak var thumbnailImageView: UIImageView!
     @IBOutlet private weak var courseButton: UIButton!
+    @IBOutlet private weak var courseNumberLabel: UILabel!
+    
+    weak var delegate: DetailCellDelegate?
+    var lessonNbr: String = ""
     static let identifier: String = "DetailCell"
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,6 +42,7 @@ final class DetailCell: UICollectionViewCell {
     }
     
     func setupData(with video: YouTubeVideo) {
+        courseNumberLabel.isHidden = true
         if let url = video.thumbnailURL {
             // Dùng thư viện SDWebImage hoặc Kingfisher để load ảnh
             thumbnailImageView.sd_setImage(with: url)
@@ -41,11 +50,12 @@ final class DetailCell: UICollectionViewCell {
     }
     
     func setupDataLN001(number: String) {
-        courseButton.titleLabel?.font = UIFont(name: "SFRounded-Bold", size: 18)
-        courseButton.titleLabel?.text = "Bài\(number)"
+        lessonNbr = number
+        courseNumberLabel.font = UIFont(name: "SFRounded-Bold", size: 14)
+        courseNumberLabel.text = "Bài \(number)"
     }
     
     @IBAction func tapToSelectItem(_ sender: Any) {
-        
+        delegate?.tapSelectItem(number: lessonNbr)
     }
 }

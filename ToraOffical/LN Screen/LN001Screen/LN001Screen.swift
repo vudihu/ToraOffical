@@ -32,16 +32,15 @@ final class LN001Screen: BaseViewController {
     }
     
     private func setupTableView() {
+        tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
-        tableView.showsHorizontalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = true
         tableView.register(UINib(nibName: "LN001CourseDetailCell", bundle: nil), forCellReuseIdentifier: "LN001CourseDetailCell")
         tableView.register(UINib(nibName: "EmptyCell", bundle: nil), forCellReuseIdentifier: "EmptyCell")
     }
     
     @IBAction func tapToBack(_ sender: Any) {
-        if let tabbarContainer = navigationController?.viewControllers.first(where: { $0 is MainTabBarViewController }) as? MainTabBarViewController {
-            navigationController?.popToViewController(tabbarContainer, animated: false)
-        }
+        navigationController?.popViewController(animated: true)
     }
 }
 
@@ -53,16 +52,18 @@ extension LN001Screen: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellType = presenter.cells[indexPath.row]
         switch cellType {
-        case .detail(let icon, let title):
+        case .detail(let content):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "LN001CourseDetailCell", for: indexPath) as? LN001CourseDetailCell else {
                 return UITableViewCell()
             }
-            cell.updateData(iconCourse: icon, title: title)
+            cell.updateData(courseType: screenType, contentType: content)
             cell.didToggleExpand = { [weak self] in
                 guard let self = self else { return }
                 self.tableView.beginUpdates()
                 self.tableView.endUpdates()
             }
+            cell.delegate = self
+            cell.sectionIndex = indexPath.section
             return cell
         case .empty(let height):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "EmptyCell", for: indexPath) as? EmptyCell else {
@@ -71,5 +72,12 @@ extension LN001Screen: UITableViewDelegate, UITableViewDataSource {
             cell.configSpace(height: height)
             return cell
         }
+    }
+}
+
+extension LN001Screen: LN001CourseDetailCellDelegate {
+    func courseDetailCell(didTapItemAt indexPath: IndexPath, inSection section: Int) {
+        let detailVC = LN002Screen()
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
